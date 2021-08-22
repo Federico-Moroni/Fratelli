@@ -1,0 +1,90 @@
+.working-method-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 94vh;
+}
+
+.working-method-federo {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.working-method-fede {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.working-method-ro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.working-img-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.working-method-fede h3,
+.working-method-ro h3 {
+  text-align: center;
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+
+.working-method-fede p,
+.working-method-ro p {
+  text-align: justify;
+  font-family: "quicksand";
+}
+
+.working-federico-image {
+  background-image: url(../images/federico-about.jpg);
+}
+
+.working-rocio-image {
+  background-image: url(../images/rocio-about.jpg);
+}
+
+.working-federico-image,
+.working-rocio-image {
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 50%;
+}
+
+.happy {
+  width: 100%;
+  height: 44vh;
+  font-family: "quicksand";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.happy-title {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.happy-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.07em;
+  bottom: -0.8em;
+  left: 0;
+  background-color: #ead144;
+}
+
+.happy p {
+  font-family: "quicksand";
+}

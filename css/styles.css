@@ -1,0 +1,1069 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/hero-backround1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.working-method {
+  width: 100%;
+  height: 100vh;
+}
+
+.working-method-sm-none {
+  width: 100%;
+  height: 105vh;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+}
+
+.projects-md {
+  width: 100%;
+  height: 105vh;
+}
+
+.projects-sm {
+  width: 100%;
+  height: 105vh;
+}
+
+.project-full {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left,
+.right,
+.center {
+  display: inline-block;
+}
+
+.left {
+  animation: f 1.2s linear;
+}
+
+.right {
+  animation: right 1.2s linear;
+}
+
+.center {
+  animation: center 0.6s ease-in;
+  animation-delay: 0.6s;
+}
+
+.hero-container::after {
+  content: "";
+  opacity: 0.7;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  width: 100%;
+}
+
+.hero h1,
+.hero h3,
+.hero p {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 8.5em;
+  letter-spacing: 0.175em;
+  font-family: "inter";
+  width: fit-content;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.hero h1::after {
+  position: absolute;
+  content: "";
+  width: 97%;
+  height: 0.025em;
+  bottom: -0.25em;
+  left: 0;
+  background-color: #ead144;
+}
+
+.about .about-us {
+  height: 75vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.about .about-us .upper-title {
+  text-align: center;
+  position: relative;
+  display: inline;
+}
+.about .about-us .upper-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.09em;
+  background-color: #ead144;
+  bottom: -0.5em;
+  left: 0;
+}
+.about p {
+  text-align: center;
+  margin-top: 3vh;
+  font-family: "quicksand";
+  text-align: justify;
+  height: 20vh;
+}
+.about .about-image-federico {
+  background-image: url(../images/federico-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.about .about-image-rocio {
+  background-image: url(../images/rocio-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.working-method-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 94vh;
+}
+
+.working-method-federo {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.working-method-fede {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.working-method-ro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.working-img-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.working-method-fede h3,
+.working-method-ro h3 {
+  text-align: center;
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+
+.working-method-fede p,
+.working-method-ro p {
+  text-align: justify;
+  font-family: "quicksand";
+}
+
+.working-federico-image {
+  background-image: url(../images/federico-about.jpg);
+}
+
+.working-rocio-image {
+  background-image: url(../images/rocio-about.jpg);
+}
+
+.working-federico-image,
+.working-rocio-image {
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 50%;
+}
+
+.happy {
+  width: 100%;
+  height: 44vh;
+  font-family: "quicksand";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.happy-title {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.happy-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.07em;
+  bottom: -0.8em;
+  left: 0;
+  background-color: #ead144;
+}
+
+.happy p {
+  font-family: "quicksand";
+}
+
+#projects h2 {
+  font-family: "quicksand";
+  height: 6vh;
+  padding: 1em 0 0 0;
+}
+
+.projects-grid {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.project-grid-format {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  height: 70vh;
+}
+
+.project-image-div {
+  height: 60%;
+  width: 100%;
+}
+
+.project-1-image {
+  background-image: url(../images/project-images/project-phone.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-2-image {
+  background-image: url(../images/project-images/project-bakery.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-3-image {
+  background-image: url(../images/project-images/project-photo.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-grid-format h4 {
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+
+.project-grid-format p {
+  text-align: justify;
+  font-family: "quicksand";
+}
+
+.see-more {
+  color: blue;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contact-container {
+  display: flex;
+  align-items: flex-start;
+  height: 85vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map-container {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.map-container h3 {
+  display: flex;
+  justify-content: start;
+  text-transform: uppercase;
+  font-family: "Quicksand";
+}
+
+.contact-box-container {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-transform: uppercase;
+}
+
+.contact-us-box {
+  width: 100%;
+}
+
+.contact-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+.header-logo {
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin-left: 2%;
+}
+
+.header-ul {
+  display: flex;
+  list-style: none;
+  margin-right: 3%;
+}
+
+header nav ul li {
+  padding: 0.5em;
+  margin-top: 0.9em;
+}
+
+.header-ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 0.3em;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-family: "quicksand";
+  margin: 0 0.1em;
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms;
+}
+
+.header-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav label {
+  z-index: 3;
+  display: none;
+}
+
+#btn-menu {
+  display: none;
+}
+
+nav label:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-image: linear-gradient(to top, #a3a3a3, rgba(169, 168, 168, 0.672));
+}
+.footer .footer-logo {
+  position: relative;
+  z-index: 2;
+  margin-left: 2%;
+}
+.footer ul {
+  display: flex;
+}
+.footer ul img {
+  margin: 1em 2em 0 0;
+}
+.footer ul a :hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+.upper-title {
+  /* For every title in the portfolio */
+  text-transform: uppercase;
+  font-family: "quicksand";
+  text-align: center;
+}
+
+.back-home {
+  text-decoration: none;
+  font-family: "quicksand";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 550;
+  border: 1px solid black;
+  color: black;
+  position: absolute;
+  right: 0;
+  margin-right: 1em;
+  padding: 0.5em;
+  margin-top: 1%;
+  z-index: 3;
+}
+
+.back-home:hover {
+  background-color: #474149;
+  color: white;
+  transition: 0.5s;
+}
+
+.submit {
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+}
+
+.submit:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+@keyframes center {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(500px);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  75% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes f {
+  0% {
+    transform: translateX(-500px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* HERO RESPONSIVE START */
+@media all and (min-width: 1200px) {
+  .hero h1 {
+    font-size: 8.5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 992px) {
+  .hero h1 {
+    font-size: 7em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 768px) {
+  .hero h1 {
+    font-size: 5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 576px) {
+  .hero h1 {
+    font-size: 5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 515px) {
+  .hero h1 {
+    font-size: 4em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 400px) {
+  .hero h1 {
+    font-size: 3em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+/* HERO RESPONSIVE END */
+/* HEADER RESPONSIVE START */
+@media all and (max-width: 885px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-ul {
+    flex-direction: column;
+    height: 8vh;
+    margin-left: -70%;
+  }
+
+  nav label {
+    display: block;
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+
+  #btn-menu:checked ~ .header-ul {
+    margin-left: 1%;
+  }
+}
+@media all and (max-width: 500px) {
+  header nav ul li {
+    padding: 0.5em;
+    margin-top: 0.1em;
+  }
+}
+/* HEADER RESPONSIVE END */
+@media all and (max-width: 1000px) {
+  .project-aside {
+    font-size: 0.8em;
+  }
+}
+/* SECTIONS RESPONSIVE START */
+@media all and (min-width: 992px) {
+  .about .about-image-federico,
+.about .about-image-rocio {
+    height: 30vh;
+    margin-bottom: 1em;
+  }
+  .about .our-team {
+    padding: 1em;
+    font-size: 2.5em;
+  }
+  .about p {
+    font-size: 1.3em;
+  }
+
+  .working-method .working-title {
+    padding: 1em;
+    font-size: 2.5em;
+  }
+  .working-method .working-image {
+    width: 50%;
+    height: 20vh;
+    margin-bottom: 1em;
+  }
+  .working-method p {
+    font-size: 1.3em;
+  }
+  .working-method .happy .happy-title {
+    margin-bottom: 1.3em;
+  }
+
+  .projects .upper-title {
+    font-size: 2.5em;
+  }
+  .projects p {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    height: 18vh;
+  }
+  .projects .project-name {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .projects .project-image-div {
+    margin-bottom: 2.2em;
+  }
+
+  .contact .email-us {
+    padding: 1em;
+    font-size: 2.5em;
+  }
+  .contact .contact-box {
+    margin-top: 2.3em;
+  }
+  .contact label,
+.contact input {
+    margin-bottom: 1.15em;
+    font-size: 1.3em;
+  }
+  .contact .message {
+    height: 15vh;
+    margin-bottom: 2em;
+  }
+  .contact .submit {
+    width: 120px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .about .about-image-federico,
+.about .about-image-rocio {
+    height: 25vh;
+    margin-bottom: 1em;
+  }
+  .about .our-team {
+    padding: 1em;
+    font-size: 2.3em;
+  }
+  .about .about-name {
+    font-size: 1.5em;
+  }
+  .about p {
+    font-size: 1.15em;
+  }
+
+  .working-method .working-title {
+    padding: 1em;
+    font-size: 2.3em;
+  }
+  .working-method .working-image {
+    width: 70%;
+    height: 20vh;
+    margin-bottom: 1em;
+  }
+  .working-method p {
+    font-size: 1.15em;
+  }
+  .working-method .happy .happy-title {
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .projects .upper-title {
+    font-size: 2.3em;
+  }
+  .projects p {
+    font-size: 1.15em;
+    margin-bottom: 1em;
+    height: 25vh;
+  }
+  .projects .project-name {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .projects .project-grid-format {
+    height: 55vh;
+  }
+  .projects .project-image-div {
+    margin-bottom: 1em;
+  }
+
+  .contact .email-us {
+    padding: 1em;
+    font-size: 2.5em;
+  }
+  .contact .contact-box {
+    margin-top: 2.3em;
+  }
+  .contact label,
+.contact input {
+    margin-bottom: 1.15em;
+    font-size: 1.15em;
+  }
+  .contact .message {
+    height: 20vh;
+    margin-bottom: 2em;
+  }
+  .contact .submit {
+    width: 120px;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .about .about-image-federico,
+.about .about-image-rocio {
+    height: 20vh;
+    margin-bottom: 1em;
+  }
+  .about .our-team {
+    padding: 1em;
+    font-size: 2em;
+  }
+  .about .about-name {
+    font-size: 1.3em;
+  }
+  .about .about-rocio,
+.about .about-federico {
+    height: 45vh;
+  }
+
+  .working-method .working-title {
+    padding: 1em;
+    font-size: 2em;
+  }
+  .working-method .working-method-federo {
+    justify-content: center;
+  }
+  .working-method h3 {
+    font-size: 1.3em;
+  }
+  .working-method .working-method-fede {
+    margin-bottom: 1em;
+  }
+  .working-method .working-image {
+    width: 35%;
+    height: 20vh;
+    margin-bottom: 2em;
+  }
+  .working-method p {
+    font-size: 1em;
+  }
+  .working-method .happy {
+    display: none;
+  }
+
+  .projects .upper-title {
+    font-size: 2em;
+  }
+  .projects p {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .projects .project-name {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+  .projects .projects-grid {
+    flex-direction: column;
+  }
+  .projects .project-grid-format {
+    flex-direction: row;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .projects .projects-column-text {
+    margin-left: 1em;
+  }
+  .projects .project-name {
+    text-align: start;
+  }
+  .projects .see-more {
+    font-size: 1em;
+  }
+
+  .contact .contact-container {
+    flex-direction: column;
+  }
+  .contact .map-container {
+    width: 100%;
+    height: 30vh;
+  }
+  .contact .contact-box-container {
+    width: 100%;
+    height: 55vh;
+  }
+  .contact .email-us {
+    padding: 1em;
+    font-size: 2em;
+  }
+  .contact .contact-box {
+    margin-top: 1em;
+  }
+  .contact label,
+.contact input {
+    margin-bottom: 1em;
+    font-size: 1em;
+  }
+  .contact .message {
+    height: 15vh;
+    margin-bottom: 1em;
+  }
+  .contact .submit {
+    width: 120px;
+  }
+}
+@media all and (max-width: 576px) {
+  .about .about-image-federico,
+.about .about-image-rocio {
+    height: 20vh;
+    margin-bottom: 0.5em;
+  }
+  .about .our-team {
+    padding: 1em 0 0 0;
+    font-size: 2em;
+  }
+  .about .about-name {
+    font-size: 1.3em;
+  }
+  .about .about-rocio,
+.about .about-federico {
+    height: 39vh;
+  }
+  .about span {
+    display: none;
+  }
+
+  .working-method .working-title {
+    padding: 1.2em 0 0 0;
+    font-size: 2em;
+  }
+  .working-method .working-method-federo {
+    justify-content: center;
+  }
+  .working-method h3 {
+    font-size: 1.3em;
+  }
+  .working-method .working-image {
+    width: 30%;
+    height: 18vh;
+    margin-bottom: 1em;
+  }
+  .working-method p {
+    font-size: 1em;
+  }
+  .working-method .happy {
+    display: none;
+  }
+
+  .projects .upper-title {
+    font-size: 2em;
+    padding: 1em 0 0 0;
+  }
+  .projects .projects-column-text {
+    width: 100%;
+  }
+  .projects p {
+    font-size: 1em;
+    margin-bottom: 0.8em;
+  }
+  .projects span {
+    display: none;
+  }
+  .projects .project-name {
+    font-size: 1.3em;
+    margin-bottom: 0.8em;
+    text-transform: uppercase;
+  }
+  .projects .projects-grid {
+    flex-direction: column;
+  }
+  .projects .project-grid-format {
+    flex-direction: row;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .projects .project-name {
+    text-align: start;
+  }
+  .projects .see-more {
+    font-size: 1em;
+  }
+
+  .contact .email-us {
+    padding: 1em 0 0 0;
+    font-size: 2em;
+    margin-bottom: 0.4em;
+  }
+  .contact .contact-container {
+    flex-direction: column;
+  }
+  .contact .map-container {
+    width: 100%;
+    height: 30vh;
+  }
+  .contact h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+  .contact .contact-box-container {
+    width: 100%;
+    height: 55vh;
+  }
+  .contact .contact-box {
+    margin-top: 1em;
+  }
+  .contact label,
+.contact input {
+    margin-bottom: 0.7em;
+    font-size: 0.9em;
+  }
+  .contact .message {
+    height: 14vh;
+    margin-bottom: 0.7em;
+  }
+  .contact .submit {
+    width: 100px;
+  }
+}
+/* SECTIONS RESPONSIVE END */
+.header-projects {
+  background-color: #0d0d0d;
+  font-family: "quicksand";
+}
+
+.header-ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 0.3em;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-family: "quicksand";
+  margin: 0 0.1em;
+}
+
+.header-ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px solid red;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms;
+}
+
+.header-ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.project-full {
+  display: flex;
+  align-items: center;
+}
+
+.project-aside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+
+.project-aside h3 {
+  font-family: "quicksand";
+  font-size: 2em;
+  margin: 0 0 2em 0;
+}
+
+.project-aside p {
+  font-family: "quicksand";
+  font-size: 1.4em;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.carousel {
+  height: 92vh;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */

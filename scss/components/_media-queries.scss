@@ -1,0 +1,490 @@
+/* HERO RESPONSIVE START */
+
+@media all and (min-width: 1200px) {
+  .hero h1 {
+    font-size: 8.5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .hero h1 {
+    font-size: 7em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hero h1 {
+    font-size: 5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .hero h1 {
+    font-size: 5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+
+@media all and (max-width: 515px) {
+  .hero h1 {
+    font-size: 4em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .hero h1 {
+    font-size: 3em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+
+/* HERO RESPONSIVE END */
+
+/* HEADER RESPONSIVE START */
+
+@media all and (max-width: 885px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-logo {
+    display: none;
+  }
+  .header-ul {
+    flex-direction: column;
+    height: 8vh;
+    margin-left: -70%;
+  }
+  nav label {
+    display: block;
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+  #btn-menu:checked ~ .header-ul {
+    margin-left: 1%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  header nav ul li {
+    padding: 0.5em;
+    margin-top: 0.1em;
+  }
+}
+
+/* HEADER RESPONSIVE END */
+
+@media all and (max-width: 1000px) {
+  .project-aside {
+    font-size: 0.8em;
+  }
+}
+
+/* SECTIONS RESPONSIVE START */
+
+@media all and (min-width: 992px) {
+  .about {
+    .about-image-federico,
+    .about-image-rocio {
+      height: 30vh;
+      margin-bottom: 1em;
+    }
+    .our-team {
+      padding: 1em;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.3em;
+    }
+  }
+  .working-method {
+    .working-title {
+      padding: 1em;
+      font-size: 2.5em;
+    }
+    .working-image {
+      width: 50%;
+      height: 20vh;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 1.3em;
+    }
+    .happy {
+      .happy-title {
+        margin-bottom: 1.3em;
+      }
+    }
+  }
+  .projects {
+    .upper-title {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.3em;
+      margin-bottom: 1em;
+      height: 18vh;
+    }
+    .project-name {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+    .project-image-div {
+      margin-bottom: 2.2em;
+    }
+  }
+  .contact {
+    .email-us {
+      padding: 1em;
+      font-size: 2.5em;
+    }
+    .contact-box {
+      margin-top: 2.3em;
+    }
+    label,
+    input {
+      margin-bottom: 1.15em;
+      font-size: 1.3em;
+    }
+    .message {
+      height: 15vh;
+      margin-bottom: 2em;
+    }
+    .submit {
+      width: 120px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .about {
+    .about-image-federico,
+    .about-image-rocio {
+      height: 25vh;
+      margin-bottom: 1em;
+    }
+    .our-team {
+      padding: 1em;
+      font-size: 2.3em;
+    }
+    .about-name {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.15em;
+    }
+  }
+  .working-method {
+    .working-title {
+      padding: 1em;
+      font-size: 2.3em;
+    }
+    .working-image {
+      width: 70%;
+      height: 20vh;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 1.15em;
+    }
+    .happy {
+      .happy-title {
+        margin-bottom: 1.5em;
+        font-size: 1.5em;
+      }
+    }
+  }
+  .projects {
+    .upper-title {
+      font-size: 2.3em;
+    }
+    p {
+      font-size: 1.15em;
+      margin-bottom: 1em;
+      height: 25vh;
+    }
+    .project-name {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    .project-grid-format {
+      height: 55vh;
+    }
+    .project-image-div {
+      margin-bottom: 1em;
+    }
+  }
+  .contact {
+    .email-us {
+      padding: 1em;
+      font-size: 2.5em;
+    }
+    .contact-box {
+      margin-top: 2.3em;
+    }
+    label,
+    input {
+      margin-bottom: 1.15em;
+      font-size: 1.15em;
+    }
+    .message {
+      height: 20vh;
+      margin-bottom: 2em;
+    }
+    .submit {
+      width: 120px;
+    }
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .about {
+    .about-image-federico,
+    .about-image-rocio {
+      height: 20vh;
+      margin-bottom: 1em;
+    }
+    .our-team {
+      padding: 1em;
+      font-size: 2em;
+    }
+    .about-name {
+      font-size: 1.3em;
+    }
+    .about-rocio,
+    .about-federico {
+      height: 45vh;
+    }
+  }
+  .working-method {
+    .working-title {
+      padding: 1em;
+      font-size: 2em;
+    }
+    .working-method-federo {
+      justify-content: center;
+    }
+    h3 {
+      font-size: 1.3em;
+    }
+    .working-method-fede {
+      margin-bottom: 1em;
+    }
+    .working-image {
+      width: 35%;
+      height: 20vh;
+      margin-bottom: 2em;
+    }
+    p {
+      font-size: 1em;
+    }
+    .happy {
+      display: none;
+    }
+  }
+  .projects {
+    .upper-title {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+    .project-name {
+      font-size: 1.3em;
+      margin-bottom: 1em;
+      text-transform: uppercase;
+    }
+    .projects-grid {
+      flex-direction: column;
+    }
+    .project-grid-format {
+      flex-direction: row;
+      width: 100%;
+      height: 30vh;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .projects-column-text {
+      margin-left: 1em;
+    }
+    .project-name {
+      text-align: start;
+    }
+    .see-more {
+      font-size: 1em;
+    }
+  }
+  .contact {
+    .contact-container {
+      flex-direction: column;
+    }
+    .map-container {
+      width: 100%;
+      height: 30vh;
+    }
+    .contact-box-container {
+      width: 100%;
+      height: 55vh;
+    }
+    .email-us {
+      padding: 1em;
+      font-size: 2em;
+    }
+    .contact-box {
+      margin-top: 1em;
+    }
+    label,
+    input {
+      margin-bottom: 1em;
+      font-size: 1em;
+    }
+    .message {
+      height: 15vh;
+      margin-bottom: 1em;
+    }
+    .submit {
+      width: 120px;
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .about {
+    .about-image-federico,
+    .about-image-rocio {
+      height: 20vh;
+      margin-bottom: 0.5em;
+    }
+    .our-team {
+      padding: 1em 0 0 0;
+      font-size: 2em;
+    }
+    .about-name {
+      font-size: 1.3em;
+    }
+    .about-rocio,
+    .about-federico {
+      height: 39vh;
+    }
+    span {
+      display: none;
+    }
+  }
+  .working-method {
+    .working-title {
+      padding: 1.2em 0 0 0;
+      font-size: 2em;
+    }
+    .working-method-federo {
+      justify-content: center;
+    }
+    h3 {
+      font-size: 1.3em;
+    }
+    .working-image {
+      width: 30%;
+      height: 18vh;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 1em;
+    }
+    .happy {
+      display: none;
+    }
+  }
+  .projects {
+    .upper-title {
+      font-size: 2em;
+      padding: 1em 0 0 0;
+    }
+    .projects-column-text {
+      width: 100%;
+    }
+    p {
+      font-size: 1em;
+      margin-bottom: 0.8em;
+    }
+    span {
+      display: none;
+    }
+    .project-name {
+      font-size: 1.3em;
+      margin-bottom: 0.8em;
+      text-transform: uppercase;
+    }
+    .projects-grid {
+      flex-direction: column;
+    }
+    .project-grid-format {
+      flex-direction: row;
+      width: 100%;
+      height: 30vh;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .project-name {
+      text-align: start;
+    }
+    .see-more {
+      font-size: 1em;
+    }
+  }
+  .contact {
+    .email-us {
+      padding: 1em 0 0 0;
+      font-size: 2em;
+      margin-bottom: 0.4em;
+    }
+    .contact-container {
+      flex-direction: column;
+    }
+    .map-container {
+      width: 100%;
+      height: 30vh;
+    }
+    h3 {
+      font-size: 1.3em;
+      margin-top: 0;
+    }
+    .contact-box-container {
+      width: 100%;
+      height: 55vh;
+    }
+    .contact-box {
+      margin-top: 1em;
+    }
+    label,
+    input {
+      margin-bottom: 0.7em;
+      font-size: 0.9em;
+    }
+    .message {
+      height: 14vh;
+      margin-bottom: 0.7em;
+    }
+    .submit {
+      width: 100px;
+    }
+  }
+}
+
+/* SECTIONS RESPONSIVE END */

@@ -1,0 +1,67 @@
+@import "../base/mapas";
+@import "../base/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: map-get($bg-color-body, bg-color);
+}
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/hero-backround1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+.about {
+  @include container-variables(100%, 100vh);
+  position: relative;
+}
+.working-method {
+  @include container-variables(100%, 100vh);
+}
+
+.working-method-sm-none {
+  @include container-variables(100%, 105vh);
+}
+
+.projects {
+  @include container-variables(100%, 100vh);
+}
+
+.projects-md {
+  @include container-variables(100%, 105vh);
+}
+
+.projects-sm {
+  @include container-variables(100%, 105vh);
+}
+
+.project-full {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+}
+
+.contact {
+  @include container-variables(100%, 100vh);
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

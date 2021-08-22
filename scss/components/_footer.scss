@@ -1,0 +1,24 @@
+.footer {
+  background-image: linear-gradient(
+    to top,
+    rgb(163, 163, 163),
+    rgba(169, 168, 168, 0.672)
+  );
+  .footer-logo {
+    position: relative;
+    z-index: 2;
+    margin-left: 2%;
+  }
+  ul {
+    display: flex;
+    img {
+      margin: 1em 2em 0 0;
+    }
+    a {
+      :hover {
+        transform: scale(1.1);
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+}

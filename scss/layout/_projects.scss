@@ -1,0 +1,63 @@
+#projects h2 {
+  font-family: "quicksand";
+  height: 6vh;
+  padding: 1em 0 0 0;
+}
+
+.projects-grid {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.project-grid-format {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  height: 70vh;
+}
+
+.project-image-div {
+  height: 60%;
+  width: 100%;
+}
+
+.project-1-image {
+  background-image: url(../images/project-images/project-phone.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-2-image {
+  background-image: url(../images/project-images/project-bakery.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-3-image {
+  background-image: url(../images/project-images/project-photo.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-grid-format h4 {
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+
+.project-grid-format p {
+  text-align: justify;
+  font-family: "quicksand";
+}
+
+.see-more {
+  color: blue;
+  text-transform: uppercase;
+  text-decoration: none;
+}
