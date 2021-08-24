@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Federico-Moroni/coderhouse-prueba.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Federico-Moroni/coderhouse-prueba/issues"
+  },
+  "homepage": "https://github.com/Federico-Moroni/coderhouse-prueba#readme",
   "description": ""
 }
