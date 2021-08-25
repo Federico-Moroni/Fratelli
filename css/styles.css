@@ -61,7 +61,7 @@ body {
 
 .contact {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .footer {
@@ -869,11 +869,11 @@ nav label:hover {
     font-size: 2em;
   }
   .contact .contact-box {
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
   .contact label,
 .contact input {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     font-size: 1em;
   }
   .contact .message {
@@ -882,6 +882,10 @@ nav label:hover {
   }
   .contact .submit {
     width: 120px;
+  }
+
+  .footer .logos {
+    width: 30px;
   }
 }
 @media all and (max-width: 576px) {
@@ -984,20 +988,24 @@ nav label:hover {
     height: 55vh;
   }
   .contact .contact-box {
-    margin-top: 1em;
+    margin-top: 0.5em;
     width: 100%;
   }
   .contact label,
 .contact input {
-    margin-bottom: 0.7em;
+    margin-bottom: 0.4em;
     font-size: 0.9em;
   }
   .contact .message {
-    height: 14vh;
-    margin-bottom: 0.7em;
+    height: 10vh;
+    margin-bottom: 0.4em;
   }
   .contact .submit {
     width: 100px;
+  }
+
+  .footer .logos {
+    width: 25px;
   }
 }
 /* SECTIONS RESPONSIVE END */

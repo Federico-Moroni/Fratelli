@@ -207,15 +207,15 @@
                 </div>
                 <div class="contact-box-container">
                     <div class="contact-us-box">
-                        <form class="contact-box">
+                        <form method="POST" action="enviar2.php" class="contact-box">
                             <label for="name">Name</label>
-                            <input type="text" class="field" name="name" placeholder="Your name">
+                            <input type="text" id="name" class="field" name="name" placeholder="Your name">
                             <label for="email">Email</label>
-                            <input type="email" class="field" name="email" placeholder="example@gmail.com">
+                            <input type="email" class="field" id="email" name="email" placeholder="example@gmail.com">
                             <label for="phone">Phone</label>
-                            <input type="text" class="field" name="phone" placeholder="Your phone">
+                            <input type="text" class="field" id="phone" name="phone" placeholder="Your phone">
                             <label for="message">Message</label>
-                            <textarea class="message" name="message"
+                            <textarea class="message" id="message" name="message"
                                 placeholder="Tell us about your project!"></textarea>
                             <input class="submit" type="submit" value="Submit"
                                 onclick="alert('We will contact you as soon as posible!')" class="submit">

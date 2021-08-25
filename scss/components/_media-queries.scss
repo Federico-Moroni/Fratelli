@@ -349,11 +349,11 @@
       font-size: 2em;
     }
     .contact-box {
-      margin-top: 1em;
+      margin-top: 0.5em;
     }
     label,
     input {
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
       font-size: 1em;
     }
     .message {
@@ -362,6 +362,11 @@
     }
     .submit {
       width: 120px;
+    }
+  }
+  .footer {
+    .logos {
+      width: 30px;
     }
   }
 }
@@ -470,20 +475,25 @@
       height: 55vh;
     }
     .contact-box {
-      margin-top: 1em;
+      margin-top: 0.5em;
       width: 100%;
     }
     label,
     input {
-      margin-bottom: 0.7em;
+      margin-bottom: 0.4em;
       font-size: 0.9em;
     }
     .message {
-      height: 14vh;
-      margin-bottom: 0.7em;
+      height: 10vh;
+      margin-bottom: 0.4em;
     }
     .submit {
       width: 100px;
+    }
+  }
+  .footer {
+    .logos {
+      width: 25px;
     }
   }
 }
