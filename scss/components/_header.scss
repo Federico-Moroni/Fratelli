@@ -48,21 +48,58 @@ header nav ul li {
   transform-origin: right;
   transition: transform 250ms;
 }
-
 .header-link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-
 nav label {
   z-index: 3;
   display: none;
+  :hover {
+    cursor: pointer;
+  }
 }
-
 #btn-menu {
   display: none;
 }
+// HEADER PROJECTS-FULL START //
 
-nav label:hover {
-  cursor: pointer;
+.header-projects {
+  font-family: "quicksand";
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header-ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.3em;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-family: "quicksand";
+    margin: 0 0.1em;
+  }
+  .header-ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms;
+  }
+  .header-ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
+// HEADER PROJECTS-FULL START //

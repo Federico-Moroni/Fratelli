@@ -29,29 +29,11 @@ body {
   position: relative;
 }
 .working-method {
-  @include container-variables(100%, 100vh);
-}
-
-.working-method-sm-none {
   @include container-variables(100%, 105vh);
 }
 
 .projects {
-  @include container-variables(100%, 100vh);
-}
-
-.projects-md {
   @include container-variables(100%, 105vh);
-}
-
-.projects-sm {
-  @include container-variables(100%, 105vh);
-}
-
-.project-full {
-  width: 100%;
-  height: 92vh;
-  display: flex;
 }
 
 .contact {

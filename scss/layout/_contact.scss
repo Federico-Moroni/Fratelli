@@ -1,9 +1,11 @@
-.contact-container {
-  display: flex;
-  align-items: flex-start;
-  height: 85vh;
-  width: 100%;
-  margin: 0 auto;
+.contact {
+  .contact-container {
+    display: flex;
+    align-items: flex-start;
+    height: 85vh;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .map-container {
@@ -13,13 +15,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-.map-container h3 {
-  display: flex;
-  justify-content: start;
-  text-transform: uppercase;
-  font-family: "Quicksand";
+  h3 {
+    display: flex;
+    justify-content: start;
+    text-transform: uppercase;
+    font-family: "Quicksand";
+  }
 }
 
 .contact-box-container {
@@ -29,20 +30,17 @@
   justify-content: flex-start;
   align-items: flex-start;
   text-transform: uppercase;
-}
-
-.contact-us-box {
-  width: 100%;
-}
-
-.contact-box {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.message {
-  display: flex;
-  flex-direction: column;
+  .contact-us-box {
+    width: 100%;
+    .contact-box {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .message {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }

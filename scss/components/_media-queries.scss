@@ -56,7 +56,7 @@
 
 /* HERO RESPONSIVE END */
 
-/* HEADER RESPONSIVE START */
+/* HEADER RESPONSIVE START - Aca esta el responsive del menu hamburguesa */
 
 @media all and (max-width: 885px) {
   nav {
@@ -97,7 +97,7 @@
   }
 }
 
-/* SECTIONS RESPONSIVE START */
+/* SECTIONS RESPONSIVE START - Aca esta el responsive para toda la pagina */
 
 @media all and (min-width: 992px) {
   .about {
@@ -169,6 +169,44 @@
     }
     .submit {
       width: 120px;
+    }
+  }
+  .carousel-bakery {
+    .container-bakery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      justify-content: flex-end;
+      height: 91vh;
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+    }
+  }
+  .carousel-photo {
+    .container-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      justify-content: flex-end;
+      height: 91vh;
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.3em;
+      }
     }
   }
 }
@@ -250,6 +288,44 @@
     }
     .submit {
       width: 120px;
+    }
+  }
+  .carousel-bakery {
+    .container-bakery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      justify-content: flex-end;
+      height: 91vh;
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+    }
+  }
+  .carousel-photo {
+    .container-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      justify-content: flex-end;
+      height: 91vh;
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.3em;
+      }
     }
   }
 }
@@ -348,25 +424,77 @@
       padding: 1em;
       font-size: 2em;
     }
+    h3 {
+      font-size: 1.3em;
+      margin-top: 0;
+      text-align: start;
+      width: 90%;
+    }
     .contact-box {
       margin-top: 0.5em;
+      width: 100%;
+      align-items: center;
+      margin-left: 5%;
     }
     label,
     input {
       margin-bottom: 0.5em;
       font-size: 1em;
+      width: 100%;
     }
     .message {
       height: 15vh;
       margin-bottom: 1em;
+      width: 100%;
     }
     .submit {
       width: 120px;
+      position: absolute;
+      left: 5%;
+      bottom: 8.5vh;
     }
   }
   .footer {
     .logos {
       width: 30px;
+    }
+  }
+  .carousel-bakery {
+    .container-bakery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      justify-content: flex-end;
+      height: 91vh;
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+    }
+  }
+  .carousel-photo {
+    .container-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      justify-content: flex-end;
+      height: 91vh;
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
     }
   }
 }
@@ -379,7 +507,7 @@
       margin-bottom: 0.5em;
     }
     .our-team {
-      padding: 1em 0 0 0;
+      padding: 1.4em 0 0 0;
       font-size: 2em;
     }
     .about-name {
@@ -389,17 +517,18 @@
     .about-federico {
       height: 39vh;
     }
-    span {
+    .span-about {
       display: none;
     }
   }
   .working-method {
     .working-title {
-      padding: 1.2em 0 0 0;
+      padding: 1.4em 0 0 0;
       font-size: 2em;
     }
     .working-method-federo {
       justify-content: center;
+      margin-top: 1em;
     }
     h3 {
       font-size: 1.3em;
@@ -428,8 +557,11 @@
       font-size: 1em;
       margin-bottom: 0.8em;
     }
-    span {
+    .span-projects {
       display: none;
+    }
+    .see {
+      display: block;
     }
     .project-name {
       font-size: 1.3em;
@@ -444,13 +576,14 @@
       width: 100%;
       height: 30vh;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
     .project-name {
       text-align: start;
+      font-size: 1.4em;
     }
     .see-more {
-      font-size: 1em;
+      font-size: 0.9em;
     }
   }
   .contact {
@@ -467,8 +600,10 @@
       height: 30vh;
     }
     h3 {
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-top: 0;
+      text-align: start;
+      width: 90%;
     }
     .contact-box-container {
       width: 100%;
@@ -477,18 +612,25 @@
     .contact-box {
       margin-top: 0.5em;
       width: 100%;
+      align-items: center;
+      margin-left: 5%;
     }
     label,
     input {
-      margin-bottom: 0.4em;
-      font-size: 0.9em;
+      margin-bottom: 0.5em;
+      font-size: 1em;
+      width: 100%;
     }
     .message {
-      height: 10vh;
-      margin-bottom: 0.4em;
+      height: 15vh;
+      margin-bottom: 1em;
+      width: 100%;
     }
     .submit {
-      width: 100px;
+      width: 120px;
+      position: absolute;
+      left: 5%;
+      bottom: 8.5vh;
     }
   }
   .footer {
@@ -496,6 +638,297 @@
       width: 25px;
     }
   }
+  .carousel-bakery {
+    .container-bakery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      justify-content: flex-end;
+      height: 91vh;
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+  .carousel-photo {
+    .container-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      justify-content: flex-end;
+      height: 91vh;
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
 }
 
 /* SECTIONS RESPONSIVE END */
+
+/* PROJECT-FULL RESPONSIVE START FOR IPAD - En esta parte le di el responsive al texto que aparece dentro del IPAD de las fotos del carousel en la seccion TECH */
+
+@media all and (min-width: 1560px) {
+  .carousel-inner-tech {
+    .container {
+      width: 25%;
+      left: 39%;
+      top: 10%;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media all and (min-width: 1460px) and (max-width: 1560px) {
+  .carousel-inner-tech {
+    .container {
+      width: 25%;
+      left: 39%;
+      top: 13%;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media all and (min-width: 1300px) and (max-width: 1460px) {
+  .carousel-inner-tech {
+    .container {
+      width: 25%;
+      left: 39%;
+      top: 17%;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media all and (min-width: 1100px) and (max-width: 1300px) {
+  .carousel-inner-tech {
+    .container {
+      width: 25%;
+      left: 39%;
+      top: 21%;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media all and (min-width: 900px) and (max-width: 1100px) {
+  .carousel-inner-tech {
+    .container {
+      width: 25%;
+      left: 39%;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2 {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 801px) and (max-width: 899px) {
+  .carousel-inner-tech {
+    .container {
+      width: 220px;
+      left: 39vw;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2 {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 701px) and (max-width: 800px) {
+  .carousel-inner-tech {
+    .container {
+      width: 220px;
+      left: 37vw;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2 {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 651px) and (max-width: 700px) {
+  .carousel-inner-tech {
+    .container {
+      width: 220px;
+      left: 36vw;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2 {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 601px) and (max-width: 650px) {
+  .carousel-inner-tech {
+    .container {
+      width: 220px;
+      left: 34vw;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2 {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 551px) and (max-width: 600px) {
+  .carousel-inner-tech {
+    .container {
+      width: 220px;
+      left: 34vw;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2 {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 550px) {
+  .carousel-inner-tech {
+    .container {
+      width: 220px;
+      left: 31vw;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2 {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 500px) {
+  .carousel-inner-tech {
+    .container {
+      width: 220px;
+      left: 27vw;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2 {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 350px) and (max-width: 399px) {
+  .carousel-inner-tech {
+    .container {
+      width: 200px;
+      left: 27vw;
+      top: 27%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+    .span-tech2,
+    .span-tech1 {
+      display: none;
+    }
+  }
+}
+
+/* PROJECT-FULL RESPONSIVE END FOR IPAD */

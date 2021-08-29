@@ -30,33 +30,12 @@ body {
 
 .working-method {
   width: 100%;
-  height: 100vh;
-}
-
-.working-method-sm-none {
-  width: 100%;
   height: 105vh;
 }
 
 .projects {
   width: 100%;
-  height: 100vh;
-}
-
-.projects-md {
-  width: 100%;
   height: 105vh;
-}
-
-.projects-sm {
-  width: 100%;
-  height: 105vh;
-}
-
-.project-full {
-  width: 100%;
-  height: 92vh;
-  display: flex;
 }
 
 .contact {
@@ -70,25 +49,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.left,
-.right,
-.center {
-  display: inline-block;
-}
-
-.left {
-  animation: f 1.2s linear;
-}
-
-.right {
-  animation: right 1.2s linear;
-}
-
-.center {
-  animation: center 0.6s ease-in;
-  animation-delay: 0.6s;
 }
 
 .hero-container::after {
@@ -109,7 +69,6 @@ body {
   height: 92vh;
   width: 100%;
 }
-
 .hero h1,
 .hero h3,
 .hero p {
@@ -118,7 +77,6 @@ body {
   position: relative;
   z-index: 2;
 }
-
 .hero h1 {
   font-size: 8.5em;
   letter-spacing: 0.175em;
@@ -127,7 +85,6 @@ body {
   margin-bottom: 1em;
   text-transform: uppercase;
 }
-
 .hero h1::after {
   position: absolute;
   content: "";
@@ -136,6 +93,21 @@ body {
   bottom: -0.25em;
   left: 0;
   background-color: #ead144;
+}
+.hero .left,
+.hero .right,
+.hero .center {
+  display: inline-block;
+}
+.hero .left {
+  animation: f 1.2s linear;
+}
+.hero .right {
+  animation: right 1.2s linear;
+}
+.hero .center {
+  animation: center 0.6s ease-in;
+  animation-delay: 0.6s;
 }
 
 .about .about-us {
@@ -159,89 +131,82 @@ body {
   bottom: -0.5em;
   left: 0;
 }
-.about p {
+.about .about-us p {
   text-align: center;
   margin-top: 3vh;
   font-family: "quicksand";
   text-align: justify;
   height: 20vh;
 }
-.about .about-image-federico {
+.about .about-us .about-image-federico {
   background-image: url(../images/federico-about.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-.about .about-image-rocio {
+.about .about-us .about-image-rocio {
   background-image: url(../images/rocio-about.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.working-method-container {
+.working-method .working-method-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 94vh;
 }
-
-.working-method-federo {
+.working-method .working-method-container .working-method-federo {
   width: 100%;
   height: 50vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
-.working-method-fede {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.working-method-ro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.working-img-h3 {
+.working-method .working-method-container .working-method-federo .working-img-h3 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
 }
-
-.working-method-fede h3,
-.working-method-ro h3 {
-  text-align: center;
-  font-family: "quicksand";
-  text-transform: uppercase;
-}
-
-.working-method-fede p,
-.working-method-ro p {
-  text-align: justify;
-  font-family: "quicksand";
-}
-
-.working-federico-image {
+.working-method .working-method-container .working-method-federo .working-img-h3 .working-federico-image {
   background-image: url(../images/federico-about.jpg);
 }
-
-.working-rocio-image {
+.working-method .working-method-container .working-method-federo .working-img-h3 .working-rocio-image {
   background-image: url(../images/rocio-about.jpg);
 }
-
-.working-federico-image,
-.working-rocio-image {
+.working-method .working-method-container .working-method-federo .working-img-h3 .working-federico-image,
+.working-method .working-method-container .working-method-federo .working-img-h3 .working-rocio-image {
   background-repeat: no-repeat;
   background-position: top center;
   border-radius: 50%;
 }
-
-.happy {
+.working-method .working-method-container .working-method-federo p {
+  text-align: justify;
+  font-family: "quicksand";
+}
+.working-method .working-method-container .working-method-federo .working-method-fede {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.working-method .working-method-container .working-method-federo .working-method-fede h3 {
+  text-align: center;
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+.working-method .working-method-container .working-method-federo .working-method-ro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.working-method .working-method-container .working-method-federo .working-method-ro h3 {
+  text-align: center;
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+.working-method .happy {
   width: 100%;
   height: 44vh;
   font-family: "quicksand";
@@ -250,13 +215,11 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
-
-.happy-title {
+.working-method .happy .happy-title {
   text-transform: uppercase;
   position: relative;
 }
-
-.happy-title::after {
+.working-method .happy .happy-title::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -265,15 +228,14 @@ body {
   left: 0;
   background-color: #ead144;
 }
-
-.happy p {
+.working-method .happy .happy-title .happy p {
   font-family: "quicksand";
 }
 
 #projects h2 {
   font-family: "quicksand";
   height: 6vh;
-  padding: 1em 0 0 0;
+  padding: 1em 0 1em 0;
 }
 
 .projects-grid {
@@ -284,57 +246,44 @@ body {
   text-align: center;
   align-items: center;
 }
-
-.project-grid-format {
+.projects-grid .project-grid-format {
   display: flex;
   flex-direction: column;
   width: 22vw;
   height: 70vh;
 }
-
-.project-image-div {
-  height: 60%;
+.projects-grid .project-grid-format .project-image-div {
+  height: 80%;
   width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
-.project-1-image {
+.projects-grid .project-grid-format .project-1-image {
   background-image: url(../images/project-images/project-phone.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
-
-.project-2-image {
+.projects-grid .project-grid-format .project-2-image {
   background-image: url(../images/project-images/project-bakery.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
-
-.project-3-image {
+.projects-grid .project-grid-format .project-3-image {
   background-image: url(../images/project-images/project-photo.jpeg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
-
-.project-grid-format h4 {
+.projects-grid .project-grid-format h4 {
   font-family: "quicksand";
   text-transform: uppercase;
 }
-
-.project-grid-format p {
+.projects-grid .project-grid-format p {
   text-align: justify;
   font-family: "quicksand";
 }
-
-.see-more {
+.projects-grid .project-grid-format .see-more {
   color: blue;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 0.8em;
 }
 
-.contact-container {
+.contact .contact-container {
   display: flex;
   align-items: flex-start;
   height: 85vh;
@@ -350,7 +299,6 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-
 .map-container h3 {
   display: flex;
   justify-content: start;
@@ -366,19 +314,16 @@ body {
   align-items: flex-start;
   text-transform: uppercase;
 }
-
-.contact-us-box {
+.contact-box-container .contact-us-box {
   width: 100%;
 }
-
-.contact-box {
+.contact-box-container .contact-us-box .contact-box {
   width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
-.message {
+.contact-box-container .contact-us-box .contact-box .message {
   display: flex;
   flex-direction: column;
 }
@@ -443,17 +388,55 @@ nav label {
   z-index: 3;
   display: none;
 }
+nav label :hover {
+  cursor: pointer;
+}
 
 #btn-menu {
   display: none;
 }
 
-nav label:hover {
-  cursor: pointer;
+.header-projects {
+  font-family: "quicksand";
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+}
+.header-projects nav {
+  width: 100%;
+  justify-content: space-between;
+}
+.header-projects .header-ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 0.3em;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-family: "quicksand";
+  margin: 0 0.1em;
+}
+.header-projects .header-ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms;
+}
+.header-projects .header-ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .footer {
-  background-image: linear-gradient(to top, #a3a3a3, rgba(169, 168, 168, 0.672));
+  background-image: linear-gradient(to top, #e9d3d3, rgba(240, 232, 232, 0.672));
 }
 .footer .footer-logo {
   position: relative;
@@ -599,7 +582,7 @@ nav label:hover {
   }
 }
 /* HERO RESPONSIVE END */
-/* HEADER RESPONSIVE START */
+/* HEADER RESPONSIVE START - Aca esta el responsive del menu hamburguesa */
 @media all and (max-width: 885px) {
   nav {
     flex-direction: column;
@@ -638,7 +621,7 @@ nav label:hover {
     font-size: 0.8em;
   }
 }
-/* SECTIONS RESPONSIVE START */
+/* SECTIONS RESPONSIVE START - Aca esta el responsive para toda la pagina */
 @media all and (min-width: 992px) {
   .about .about-image-federico,
 .about .about-image-rocio {
@@ -703,6 +686,42 @@ nav label:hover {
   }
   .contact .submit {
     width: 120px;
+  }
+
+  .carousel-bakery .container-bakery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-bakery .container-bakery h1 {
+    font-size: 3em;
+  }
+  .carousel-bakery .container-bakery p {
+    font-size: 1.3em;
+  }
+
+  .carousel-photo .container-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-photo .container-photo h1 {
+    font-size: 3em;
+  }
+  .carousel-photo .container-photo p {
+    font-size: 1.3em;
   }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -776,6 +795,42 @@ nav label:hover {
   }
   .contact .submit {
     width: 120px;
+  }
+
+  .carousel-bakery .container-bakery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-bakery .container-bakery h1 {
+    font-size: 3em;
+  }
+  .carousel-bakery .container-bakery p {
+    font-size: 1.3em;
+  }
+
+  .carousel-photo .container-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-photo .container-photo h1 {
+    font-size: 3em;
+  }
+  .carousel-photo .container-photo p {
+    font-size: 1.3em;
   }
 }
 @media all and (min-width: 576px) and (max-width: 768px) {
@@ -868,24 +923,74 @@ nav label:hover {
     padding: 1em;
     font-size: 2em;
   }
+  .contact h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    text-align: start;
+    width: 90%;
+  }
   .contact .contact-box {
     margin-top: 0.5em;
+    width: 100%;
+    align-items: center;
+    margin-left: 5%;
   }
   .contact label,
 .contact input {
     margin-bottom: 0.5em;
     font-size: 1em;
+    width: 100%;
   }
   .contact .message {
     height: 15vh;
     margin-bottom: 1em;
+    width: 100%;
   }
   .contact .submit {
     width: 120px;
+    position: absolute;
+    left: 5%;
+    bottom: 8.5vh;
   }
 
   .footer .logos {
     width: 30px;
+  }
+
+  .carousel-bakery .container-bakery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-bakery .container-bakery h1 {
+    font-size: 3em;
+  }
+  .carousel-bakery .container-bakery p {
+    font-size: 1.3em;
+  }
+
+  .carousel-photo .container-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-photo .container-photo h1 {
+    font-size: 2em;
+  }
+  .carousel-photo .container-photo p {
+    font-size: 1em;
   }
 }
 @media all and (max-width: 576px) {
@@ -895,7 +1000,7 @@ nav label:hover {
     margin-bottom: 0.5em;
   }
   .about .our-team {
-    padding: 1em 0 0 0;
+    padding: 1.4em 0 0 0;
     font-size: 2em;
   }
   .about .about-name {
@@ -905,16 +1010,17 @@ nav label:hover {
 .about .about-federico {
     height: 39vh;
   }
-  .about span {
+  .about .span-about {
     display: none;
   }
 
   .working-method .working-title {
-    padding: 1.2em 0 0 0;
+    padding: 1.4em 0 0 0;
     font-size: 2em;
   }
   .working-method .working-method-federo {
     justify-content: center;
+    margin-top: 1em;
   }
   .working-method h3 {
     font-size: 1.3em;
@@ -942,8 +1048,11 @@ nav label:hover {
     font-size: 1em;
     margin-bottom: 0.8em;
   }
-  .projects span {
+  .projects .span-projects {
     display: none;
+  }
+  .projects .see {
+    display: block;
   }
   .projects .project-name {
     font-size: 1.3em;
@@ -958,13 +1067,14 @@ nav label:hover {
     width: 100%;
     height: 30vh;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .projects .project-name {
     text-align: start;
+    font-size: 1.4em;
   }
   .projects .see-more {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   .contact .email-us {
@@ -980,8 +1090,10 @@ nav label:hover {
     height: 30vh;
   }
   .contact h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-top: 0;
+    text-align: start;
+    width: 90%;
   }
   .contact .contact-box-container {
     width: 100%;
@@ -990,89 +1102,366 @@ nav label:hover {
   .contact .contact-box {
     margin-top: 0.5em;
     width: 100%;
+    align-items: center;
+    margin-left: 5%;
   }
   .contact label,
 .contact input {
-    margin-bottom: 0.4em;
-    font-size: 0.9em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    width: 100%;
   }
   .contact .message {
-    height: 10vh;
-    margin-bottom: 0.4em;
+    height: 15vh;
+    margin-bottom: 1em;
+    width: 100%;
   }
   .contact .submit {
-    width: 100px;
+    width: 120px;
+    position: absolute;
+    left: 5%;
+    bottom: 8.5vh;
   }
 
   .footer .logos {
     width: 25px;
   }
+
+  .carousel-bakery .container-bakery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-bakery .container-bakery h1 {
+    font-size: 1.8em;
+  }
+  .carousel-bakery .container-bakery p {
+    font-size: 1em;
+  }
+
+  .carousel-photo .container-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-photo .container-photo h1 {
+    font-size: 1.8em;
+  }
+  .carousel-photo .container-photo p {
+    font-size: 1em;
+  }
 }
 /* SECTIONS RESPONSIVE END */
-.header-projects {
-  background-color: #0d0d0d;
-  font-family: "quicksand";
+/* PROJECT-FULL RESPONSIVE START FOR IPAD - En esta parte le di el responsive al texto que aparece dentro del IPAD de las fotos del carousel en la seccion TECH */
+@media all and (min-width: 1560px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 10%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 3em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 1em;
+  }
 }
-
-.header-ul li a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.1em;
-  padding: 0.3em;
-  font-weight: 500;
-  color: white;
-  position: relative;
-  z-index: 2;
-  font-family: "quicksand";
-  margin: 0 0.1em;
+@media all and (min-width: 1460px) and (max-width: 1560px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 13%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 3em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 1em;
+  }
 }
-
-.header-ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px solid red;
-  background-color: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms;
+@media all and (min-width: 1300px) and (max-width: 1460px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 17%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 3em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 1em;
+  }
 }
-
-.header-ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+@media all and (min-width: 1100px) and (max-width: 1300px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 21%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 1em;
+  }
 }
-
+@media all and (min-width: 900px) and (max-width: 1100px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 801px) and (max-width: 899px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 39vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 701px) and (max-width: 800px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 37vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 651px) and (max-width: 700px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 36vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 650px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 34vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 551px) and (max-width: 600px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 34vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 550px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 31vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 400px) and (max-width: 500px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 27vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 350px) and (max-width: 399px) {
+  .carousel-inner-tech .container {
+    width: 200px;
+    left: 27vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2,
+.carousel-inner-tech .span-tech1 {
+    display: none;
+  }
+}
+/* PROJECT-FULL RESPONSIVE END FOR IPAD */
 .project-full {
   display: flex;
   align-items: center;
-}
-
-.project-aside {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 50%;
-}
-
-.project-aside h3 {
-  font-family: "quicksand";
-  font-size: 2em;
-  margin: 0 0 2em 0;
-}
-
-.project-aside p {
-  font-family: "quicksand";
-  font-size: 1.4em;
-  text-align: justify;
-  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
 .carousel {
-  height: 92vh;
-  overflow: hidden;
+  height: 100vh;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.carousel-tech1 {
+  background-image: url(/images/project-images/project-phone.jpg);
+}
+
+.carousel-tech2 {
+  background-image: url(/images/project-images/project-phone1.jpeg);
+}
+
+.carousel-tech3 {
+  background-image: url(/images/project-images/project-phone2.jpeg);
+}
+
+.carousel-bakery1 {
+  background-image: url(/images/project-images/project-bakery.jpg);
+}
+
+.carousel-bakery2 {
+  background-image: url(/images/project-images/project-bakery1.jpeg);
+}
+
+.carousel-bakery3 {
+  background-image: url(/images/project-images/project-bakery2.jpeg);
+}
+
+.carousel-photo1 {
+  background-image: url(/images/project-images/project-photo.jpeg);
+}
+
+.carousel-photo2 {
+  background-image: url(/images/project-images/project-photo1.jpeg);
+}
+
+.carousel-photo3 {
+  background-image: url(/images/project-images/project-photo2.jpeg);
+}
+
+.carousel-inner .carousel-bakery,
+.carousel-inner .carousel-tech,
+.carousel-inner .carousel-photo {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.carousel-inner .container {
+  text-transform: uppercase;
+  font-family: "quicksand";
+  position: absolute;
+}
+.carousel-inner .container h1 {
+  text-align: center;
+}
+.carousel-inner .container p {
+  text-align: justify;
+}
+
+.carousel-inner .carousel-bakery::before,
+.carousel-inner .carousel-tech::before,
+.carousel-inner .carousel-photo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */
