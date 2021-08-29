@@ -55,7 +55,7 @@ header nav ul li {
 nav label {
   z-index: 3;
   display: none;
-  :hover {
+  &:hover {
     cursor: pointer;
   }
 }

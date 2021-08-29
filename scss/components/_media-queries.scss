@@ -63,7 +63,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
   .header-logo {
     display: none;
   }
@@ -622,7 +621,7 @@
       width: 100%;
     }
     .message {
-      height: 15vh;
+      height: 8vh;
       margin-bottom: 1em;
       width: 100%;
     }
@@ -630,12 +629,12 @@
       width: 120px;
       position: absolute;
       left: 5%;
-      bottom: 8.5vh;
+      bottom: 7vh;
     }
   }
   .footer {
     .logos {
-      width: 25px;
+      width: 26px;
     }
   }
   .carousel-bakery {

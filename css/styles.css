@@ -6,44 +6,53 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
-
-body {
+html body {
   background-color: #f8f8f8;
 }
-
-.hero-container {
+html body .hero-container,
+html body .about,
+html body .working-method,
+html body .projects,
+html body .contact,
+html body .project-full {
+  scroll-snap-align: start;
+}
+html body .hero-container {
   width: 100%;
   height: 100vh;
-  position: relative;
   background-image: url(../images/hero-backround1.jpg);
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
 }
-
-.about {
+html body .about {
   width: 100%;
   height: 100vh;
   position: relative;
 }
-
-.working-method {
+html body .working-method {
   width: 100%;
   height: 105vh;
 }
-
-.projects {
+html body .projects {
   width: 100%;
   height: 105vh;
 }
-
-.contact {
+html body .project-full {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+html body .contact {
   width: 100%;
   height: 90vh;
 }
-
-.footer {
+html body .footer {
   width: 100%;
   height: 10vh;
   display: flex;
@@ -162,7 +171,8 @@ body {
   height: 50vh;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 2em;
 }
 .working-method .working-method-container .working-method-federo .working-img-h3 {
   display: flex;
@@ -214,6 +224,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+.working-method .happy .happy-carousel-container {
+  width: 55%;
+  margin: 0 auto;
+}
+.working-method .happy .happy-carousel-container .happy-carousel {
+  text-align: center;
+}
+.working-method .happy .happy-carousel-container .happy-carousel p {
+  font-size: 1.2em;
 }
 .working-method .happy .happy-title {
   text-transform: uppercase;
@@ -388,7 +408,7 @@ nav label {
   z-index: 3;
   display: none;
 }
-nav label :hover {
+nav label:hover {
   cursor: pointer;
 }
 
@@ -436,7 +456,7 @@ nav label :hover {
 }
 
 .footer {
-  background-image: linear-gradient(to top, #e9d3d3, rgba(240, 232, 232, 0.672));
+  background-image: linear-gradient(to top, #525252, black);
 }
 .footer .footer-logo {
   position: relative;
@@ -452,6 +472,12 @@ nav label :hover {
 .footer ul a :hover {
   transform: scale(1.1);
   transition: 0.3s ease-in;
+}
+.footer .mid-footer {
+  color: white;
+  font-family: "comfortaa";
+  font-weight: 300;
+  font-size: 1em;
 }
 
 .upper-title {
@@ -476,7 +502,6 @@ nav label :hover {
   margin-top: 1%;
   z-index: 3;
 }
-
 .back-home:hover {
   background-color: #474149;
   color: white;
@@ -489,7 +514,6 @@ nav label :hover {
   background-color: white;
   color: black;
 }
-
 .submit:hover {
   color: white;
   background-color: black;
@@ -1112,7 +1136,7 @@ nav label :hover {
     width: 100%;
   }
   .contact .message {
-    height: 15vh;
+    height: 8vh;
     margin-bottom: 1em;
     width: 100%;
   }
@@ -1120,11 +1144,11 @@ nav label :hover {
     width: 120px;
     position: absolute;
     left: 5%;
-    bottom: 8.5vh;
+    bottom: 7vh;
   }
 
   .footer .logos {
-    width: 25px;
+    width: 26px;
   }
 
   .carousel-bakery .container-bakery {
@@ -1376,61 +1400,42 @@ nav label :hover {
   }
 }
 /* PROJECT-FULL RESPONSIVE END FOR IPAD */
-.project-full {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-
-.carousel {
-  height: 100vh;
-}
-
 .row {
   --bs-gutter-x: 0;
 }
-
-.carousel-tech1 {
+.row .carousel {
+  height: 100vh;
+}
+.row .carousel-inner .carousel-tech1 {
   background-image: url(/images/project-images/project-phone.jpg);
 }
-
-.carousel-tech2 {
+.row .carousel-inner .carousel-tech2 {
   background-image: url(/images/project-images/project-phone1.jpeg);
 }
-
-.carousel-tech3 {
+.row .carousel-inner .carousel-tech3 {
   background-image: url(/images/project-images/project-phone2.jpeg);
 }
-
-.carousel-bakery1 {
+.row .carousel-inner .carousel-bakery1 {
   background-image: url(/images/project-images/project-bakery.jpg);
 }
-
-.carousel-bakery2 {
+.row .carousel-inner .carousel-bakery2 {
   background-image: url(/images/project-images/project-bakery1.jpeg);
 }
-
-.carousel-bakery3 {
+.row .carousel-inner .carousel-bakery3 {
   background-image: url(/images/project-images/project-bakery2.jpeg);
 }
-
-.carousel-photo1 {
+.row .carousel-inner .carousel-photo1 {
   background-image: url(/images/project-images/project-photo.jpeg);
 }
-
-.carousel-photo2 {
+.row .carousel-inner .carousel-photo2 {
   background-image: url(/images/project-images/project-photo1.jpeg);
 }
-
-.carousel-photo3 {
+.row .carousel-inner .carousel-photo3 {
   background-image: url(/images/project-images/project-photo2.jpeg);
 }
-
-.carousel-inner .carousel-bakery,
-.carousel-inner .carousel-tech,
-.carousel-inner .carousel-photo {
+.row .carousel-inner .carousel-bakery,
+.row .carousel-inner .carousel-tech,
+.row .carousel-inner .carousel-photo {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1439,21 +1444,9 @@ nav label :hover {
   z-index: 1;
   color: white;
 }
-.carousel-inner .container {
-  text-transform: uppercase;
-  font-family: "quicksand";
-  position: absolute;
-}
-.carousel-inner .container h1 {
-  text-align: center;
-}
-.carousel-inner .container p {
-  text-align: justify;
-}
-
-.carousel-inner .carousel-bakery::before,
-.carousel-inner .carousel-tech::before,
-.carousel-inner .carousel-photo::before {
+.row .carousel-inner .carousel-bakery::before,
+.row .carousel-inner .carousel-tech::before,
+.row .carousel-inner .carousel-photo::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1462,6 +1455,17 @@ nav label :hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+.row .carousel-inner .container {
+  text-transform: uppercase;
+  font-family: "quicksand";
+  position: absolute;
+}
+.row .carousel-inner .container h1 {
+  text-align: center;
+}
+.row .carousel-inner .container p {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=styles.css.map */

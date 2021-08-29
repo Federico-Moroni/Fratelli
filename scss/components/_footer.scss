@@ -1,9 +1,5 @@
 .footer {
-  background-image: linear-gradient(
-    to top,
-    rgb(233, 211, 211),
-    rgba(240, 232, 232, 0.672)
-  );
+  background-image: linear-gradient(to top, rgb(82, 82, 82), black);
   .footer-logo {
     position: relative;
     z-index: 2;
@@ -20,5 +16,11 @@
         transition: 0.3s ease-in;
       }
     }
+  }
+  .mid-footer {
+    color: white;
+    font-family: "comfortaa";
+    font-weight: 300;
+    font-size: 1em;
   }
 }

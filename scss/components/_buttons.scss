@@ -1,3 +1,5 @@
+// BACK-HOME: Para todos los botones back-home del proyecto - START
+
 .back-home {
   text-decoration: none;
   font-family: "quicksand";
@@ -12,25 +14,27 @@
   padding: 0.5em;
   margin-top: 1%;
   z-index: 3;
+  &:hover {
+    background-color: #474149;
+    color: white;
+    transition: 0.5s;
+  }
 }
 
-.back-home:hover {
-  background-color: #474149;
-  color: white;
-  transition: 0.5s;
-}
+// BACK-HOME: Para todos los botones back-home del proyecto - END
+
+// BACK-HOME: Para todos los botones submit del proyecto - START
 
 .submit {
   cursor: pointer;
   text-transform: uppercase;
   background-color: white;
   color: black;
+  &:hover {
+    color: white;
+    background-color: black;
+    transition: 0.3s;
+  }
 }
 
-.submit:hover {
-  color: white;
-  background-color: black;
-  transition: 0.3s;
-}
-
-
+// BACK-HOME: Para todos los botones submit del proyecto - END
