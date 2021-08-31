@@ -8,7 +8,6 @@
     width: fit-content;
   }
 }
-
 @media all and (max-width: 992px) {
   .hero h1 {
     font-size: 7em;
@@ -17,7 +16,6 @@
     width: fit-content;
   }
 }
-
 @media all and (max-width: 768px) {
   .hero h1 {
     font-size: 5em;
@@ -26,7 +24,6 @@
     width: fit-content;
   }
 }
-
 @media all and (max-width: 576px) {
   .hero h1 {
     font-size: 5em;
@@ -35,7 +32,6 @@
     width: fit-content;
   }
 }
-
 @media all and (max-width: 515px) {
   .hero h1 {
     font-size: 4em;
@@ -44,7 +40,6 @@
     width: fit-content;
   }
 }
-
 @media all and (max-width: 400px) {
   .hero h1 {
     font-size: 3em;
@@ -53,7 +48,6 @@
     width: fit-content;
   }
 }
-
 /* HERO RESPONSIVE END */
 
 /* HEADER RESPONSIVE START - Aca esta el responsive del menu hamburguesa */
@@ -80,7 +74,6 @@
     margin-left: 1%;
   }
 }
-
 @media all and (max-width: 500px) {
   header nav ul li {
     padding: 0.5em;
@@ -209,7 +202,6 @@
     }
   }
 }
-
 @media all and (min-width: 768px) and (max-width: 992px) {
   .about {
     .about-image-federico,
@@ -328,7 +320,6 @@
     }
   }
 }
-
 @media all and (min-width: 576px) and (max-width: 768px) {
   .about {
     .about-image-federico,
@@ -497,7 +488,6 @@
     }
   }
 }
-
 @media all and (max-width: 576px) {
   .about {
     .about-image-federico,
@@ -576,6 +566,9 @@
       height: 30vh;
       align-items: center;
       justify-content: space-between;
+    }
+    .project-image-div {
+      margin-right: 2%;
     }
     .project-name {
       text-align: start;
@@ -697,7 +690,6 @@
     }
   }
 }
-
 @media all and (min-width: 1460px) and (max-width: 1560px) {
   .carousel-inner-tech {
     .container {
@@ -714,7 +706,6 @@
     }
   }
 }
-
 @media all and (min-width: 1300px) and (max-width: 1460px) {
   .carousel-inner-tech {
     .container {
@@ -731,7 +722,6 @@
     }
   }
 }
-
 @media all and (min-width: 1100px) and (max-width: 1300px) {
   .carousel-inner-tech {
     .container {
@@ -748,7 +738,6 @@
     }
   }
 }
-
 @media all and (min-width: 900px) and (max-width: 1100px) {
   .carousel-inner-tech {
     .container {
@@ -768,7 +757,6 @@
     }
   }
 }
-
 @media all and (min-width: 801px) and (max-width: 899px) {
   .carousel-inner-tech {
     .container {
@@ -788,7 +776,6 @@
     }
   }
 }
-
 @media all and (min-width: 701px) and (max-width: 800px) {
   .carousel-inner-tech {
     .container {
@@ -808,7 +795,6 @@
     }
   }
 }
-
 @media all and (min-width: 651px) and (max-width: 700px) {
   .carousel-inner-tech {
     .container {
@@ -828,7 +814,6 @@
     }
   }
 }
-
 @media all and (min-width: 601px) and (max-width: 650px) {
   .carousel-inner-tech {
     .container {
@@ -848,7 +833,6 @@
     }
   }
 }
-
 @media all and (min-width: 551px) and (max-width: 600px) {
   .carousel-inner-tech {
     .container {
@@ -868,7 +852,6 @@
     }
   }
 }
-
 @media all and (min-width: 500px) and (max-width: 550px) {
   .carousel-inner-tech {
     .container {
@@ -888,7 +871,6 @@
     }
   }
 }
-
 @media all and (min-width: 400px) and (max-width: 500px) {
   .carousel-inner-tech {
     .container {
@@ -908,7 +890,6 @@
     }
   }
 }
-
 @media all and (min-width: 350px) and (max-width: 399px) {
   .carousel-inner-tech {
     .container {

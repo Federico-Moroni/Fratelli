@@ -233,7 +233,7 @@ html body .footer {
   text-align: center;
 }
 .working-method .happy .happy-carousel-container .happy-carousel p {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .working-method .happy .happy-title {
   text-transform: uppercase;
@@ -1092,6 +1092,9 @@ nav label:hover {
     height: 30vh;
     align-items: center;
     justify-content: space-between;
+  }
+  .projects .project-image-div {
+    margin-right: 2%;
   }
   .projects .project-name {
     text-align: start;
