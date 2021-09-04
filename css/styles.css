@@ -352,6 +352,7 @@ html body .footer {
 .contact-box-container .contact-us-box .contact-box .message {
   display: flex;
   flex-direction: column;
+  resize: none;
 }
 
 nav {
