@@ -274,6 +274,10 @@ html body .footer {
   width: 22vw;
   height: 70vh;
 }
+.projects-grid .project-grid-format:hover .project-image-div {
+  transform: scale(1.02);
+  transition: 0.5s ease-in;
+}
 .projects-grid .project-grid-format .project-image-div {
   height: 80%;
   width: 100%;

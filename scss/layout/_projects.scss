@@ -18,6 +18,10 @@
     flex-direction: column;
     width: 22vw;
     height: 70vh;
+    &:hover .project-image-div {
+      transform: scale(1.02);
+      transition: 0.5s ease-in;
+    }
     .project-image-div {
       height: 80%;
       width: 100%;
