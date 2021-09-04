@@ -103,12 +103,12 @@
       font-size: 2.5em;
     }
     p {
-      font-size: 1.3em;
+      font-size: 1em;
     }
   }
   .working-method {
     .working-title {
-      padding: 1em;
+      padding: 3%;
       font-size: 2.5em;
     }
     .working-image {
@@ -117,7 +117,7 @@
       margin-bottom: 1em;
     }
     p {
-      font-size: 1.3em;
+      font-size: 1em;
     }
     .happy {
       .happy-title {
@@ -130,7 +130,7 @@
       font-size: 2.5em;
     }
     p {
-      font-size: 1.3em;
+      font-size: 1em;
       margin-bottom: 1em;
       height: 18vh;
     }
@@ -144,20 +144,20 @@
   }
   .contact {
     .email-us {
-      padding: 1em;
+      padding: 2%;
       font-size: 2.5em;
     }
     .contact-box {
-      margin-top: 2.3em;
+      margin-top: 4.2%;
     }
     label,
     input {
-      margin-bottom: 1.15em;
-      font-size: 1.3em;
+      margin-bottom: 3%;
+      font-size: 1em;
     }
     .message {
       height: 15vh;
-      margin-bottom: 2em;
+      margin-bottom: 3%;
     }
     .submit {
       width: 120px;
@@ -217,7 +217,7 @@
       font-size: 1.5em;
     }
     p {
-      font-size: 1.15em;
+      font-size: 1em;
     }
   }
   .working-method {
@@ -231,7 +231,7 @@
       margin-bottom: 1em;
     }
     p {
-      font-size: 1.15em;
+      font-size: 1em;
     }
     .happy {
       .happy-title {
@@ -245,7 +245,7 @@
       font-size: 2.3em;
     }
     p {
-      font-size: 1.15em;
+      font-size: 1em;
       margin-bottom: 1em;
       height: 25vh;
     }
@@ -262,20 +262,20 @@
   }
   .contact {
     .email-us {
-      padding: 1em;
+      padding: 2%;
       font-size: 2.5em;
     }
     .contact-box {
-      margin-top: 2.3em;
+      margin-top: 4.2%;
     }
     label,
     input {
-      margin-bottom: 1.15em;
-      font-size: 1.15em;
+      margin-bottom: 3%;
+      font-size: 1em;
     }
     .message {
-      height: 20vh;
-      margin-bottom: 2em;
+      height: 15vh;
+      margin-bottom: 3%;
     }
     .submit {
       width: 120px;
@@ -361,9 +361,6 @@
     p {
       font-size: 1em;
     }
-    .happy {
-      display: none;
-    }
   }
   .projects {
     .upper-title {
@@ -390,6 +387,9 @@
     }
     .projects-column-text {
       margin-left: 1em;
+      height: 20vh;
+      width: 100%;
+      margin-right: 4%;
     }
     .project-name {
       text-align: start;
@@ -408,10 +408,10 @@
     }
     .contact-box-container {
       width: 100%;
-      height: 55vh;
+      height: 50vh;
     }
     .email-us {
-      padding: 1em;
+      padding: 2%;
       font-size: 2em;
     }
     h3 {
@@ -421,27 +421,24 @@
       width: 90%;
     }
     .contact-box {
-      margin-top: 0.5em;
+      margin-top: 1%;
       width: 100%;
       align-items: center;
       margin-left: 5%;
     }
     label,
     input {
-      margin-bottom: 0.5em;
+      margin-bottom: 2.5%;
       font-size: 1em;
       width: 100%;
     }
     .message {
-      height: 15vh;
-      margin-bottom: 1em;
+      height: 12vh;
+      margin-bottom: 3%;
       width: 100%;
     }
     .submit {
-      width: 120px;
-      position: absolute;
-      left: 5%;
-      bottom: 8.5vh;
+      width: 100%;
     }
   }
   .footer {
@@ -512,7 +509,7 @@
   }
   .working-method {
     .working-title {
-      padding: 1.4em 0 0 0;
+      padding: 10% 0 0 0;
       font-size: 2em;
     }
     .working-method-federo {
@@ -580,16 +577,16 @@
   }
   .contact {
     .email-us {
-      padding: 1em 0 0 0;
+      padding: 5% 0 0 0;
       font-size: 2em;
-      margin-bottom: 0.4em;
+      margin-bottom: 3%;
     }
     .contact-container {
       flex-direction: column;
     }
     .map-container {
       width: 100%;
-      height: 30vh;
+      height: 25vh;
     }
     h3 {
       font-size: 1.2em;
@@ -602,27 +599,24 @@
       height: 55vh;
     }
     .contact-box {
-      margin-top: 0.5em;
+      margin-top: 4.2%;
       width: 100%;
       align-items: center;
       margin-left: 5%;
     }
     label,
     input {
-      margin-bottom: 0.5em;
+      margin-bottom: 1.9%;
       font-size: 1em;
       width: 100%;
     }
     .message {
-      height: 8vh;
-      margin-bottom: 1em;
+      height: 12vh;
+      margin-bottom: 5%;
       width: 100%;
     }
     .submit {
-      width: 120px;
-      position: absolute;
-      left: 5%;
-      bottom: 7vh;
+      width: 100%;
     }
   }
   .footer {
