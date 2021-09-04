@@ -1,7 +1,4 @@
-@import "./base/colors";
-@import "./base/extends";
 @import "./base/typography";
-@import "./base/variables";
 @import "./layout/containers";
 @import "./layout/hero";
 @import "./layout/about";
@@ -14,5 +11,4 @@
 @import "./components/buttons";
 @import "./components/animations";
 @import "./components/media-queries";
-@import "./base/mixins.scss";
 @import "./layout/projects-full.scss";
