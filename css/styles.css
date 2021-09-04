@@ -5,6 +5,7 @@
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
@@ -694,7 +695,7 @@ nav label:hover {
   }
 
   .contact .email-us {
-    padding: 2%;
+    padding: 2% 0 0 0;
     font-size: 2.5em;
   }
   .contact .contact-box {
@@ -702,8 +703,8 @@ nav label:hover {
   }
   .contact label,
 .contact input {
-    margin-bottom: 3%;
-    font-size: 1em;
+    margin-bottom: 2.8%;
+    font-size: 1.1em;
   }
   .contact .message {
     height: 15vh;
