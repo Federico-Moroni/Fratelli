@@ -23,7 +23,7 @@ html body .project-full {
 html body .hero-container {
   width: 100%;
   height: 100vh;
-  background-image: url(../../images/hero-backround1.pmg.png);
+  background-image: url(../../images/hero-backround1.jpg);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,13 +149,13 @@ html body .footer {
   height: 20vh;
 }
 .about .about-us .about-image-federico {
-  background-image: url(../../images/federico-about.png);
+  background-image: url(../../images/federico-about.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .about .about-us .about-image-rocio {
-  background-image: url(../../images/rocio-about.png);
+  background-image: url(../../images/rocio-about.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -183,10 +183,10 @@ html body .footer {
   width: 100%;
 }
 .working-method .working-method-container .working-method-federo .working-img-h3 .working-federico-image {
-  background-image: url(../../images/federico-about.png);
+  background-image: url(../../images/federico-about.jpg);
 }
 .working-method .working-method-container .working-method-federo .working-img-h3 .working-rocio-image {
-  background-image: url(../../images/rocio-about.png);
+  background-image: url(../../images/rocio-about.jpg);
 }
 .working-method .working-method-container .working-method-federo .working-img-h3 .working-federico-image,
 .working-method .working-method-container .working-method-federo .working-img-h3 .working-rocio-image {
@@ -286,15 +286,15 @@ html body .footer {
   background-repeat: no-repeat;
 }
 .projects-grid .project-grid-format .project-1-image {
-  background-image: url(../../images/project-images/project-phone.png);
+  background-image: url(../../images/project-images/project-phone.jpg);
 }
 .projects-grid .project-grid-format .project-2-image {
-  background-image: url(../../images/project-images/project-bakery.png);
+  background-image: url(../../images/project-images/project-bakery.jpg);
 }
 .projects-grid .project-grid-format .project-3-image {
-  background-image: url(../../images/project-images/project-photo.png);
+  background-image: url(../../images/project-images/project-photo.jpeg);
 }
-.projects-grid .project-grid-format h4 {
+.projects-grid .project-grid-format h3 {
   font-family: "quicksand";
   text-transform: uppercase;
 }
@@ -1411,31 +1411,31 @@ nav label:hover {
   height: 100vh;
 }
 .row .carousel-inner .carousel-tech1 {
-  background-image: url(/images/project-images/project-phone.png);
+  background-image: url(/images/project-images/project-phone.jpg);
 }
 .row .carousel-inner .carousel-tech2 {
-  background-image: url(/images/project-images/project-phone1.png);
+  background-image: url(/images/project-images/project-phone1.jpeg);
 }
 .row .carousel-inner .carousel-tech3 {
-  background-image: url(/images/project-images/project-phone2.png);
+  background-image: url(/images/project-images/project-phone2.jpeg);
 }
 .row .carousel-inner .carousel-bakery1 {
-  background-image: url(/images/project-images/project-bakery.png);
+  background-image: url(/images/project-images/project-bakery.jpg);
 }
 .row .carousel-inner .carousel-bakery2 {
-  background-image: url(/images/project-images/project-bakery1.png);
+  background-image: url(/images/project-images/project-bakery1.jpeg);
 }
 .row .carousel-inner .carousel-bakery3 {
-  background-image: url(/images/project-images/project-bakery2.png);
+  background-image: url(/images/project-images/project-bakery2.jpeg);
 }
 .row .carousel-inner .carousel-photo1 {
-  background-image: url(/images/project-images/project-photo.png);
+  background-image: url(/images/project-images/project-photo.jpeg);
 }
 .row .carousel-inner .carousel-photo2 {
-  background-image: url(/images/project-images/project-photo1.png);
+  background-image: url(/images/project-images/project-photo1.jpeg);
 }
 .row .carousel-inner .carousel-photo3 {
-  background-image: url(/images/project-images/project-photo2.png);
+  background-image: url(/images/project-images/project-photo2.jpeg);
 }
 .row .carousel-inner .carousel-bakery,
 .row .carousel-inner .carousel-tech,

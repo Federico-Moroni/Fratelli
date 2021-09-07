@@ -23,7 +23,7 @@ html {
     background-color: map-get($bg-color-body, bg-color);
     .hero-container {
       @include container-variables(100%, 100vh);
-      background-image: url(../../images/hero-backround1.pmg.png);
+      background-image: url(../../images/hero-backround1.jpg);
       position: relative;
       background-repeat: no-repeat;
       background-size: cover;
