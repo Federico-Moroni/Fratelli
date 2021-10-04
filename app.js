@@ -71,18 +71,18 @@ let mensaje = (`${completeName}, ${email}, ${phone}, ${websiteType}, ${viewports
 console.log(mensaje);
 }
 
- class Usuarios {
-     constructor (completeName1, email1, phone1, websiteType1, viewportsQuantity1, isEcommerce1, functionalities1, designLogo1) {
-         this.nameUsuarios = completeName1;
-         this.emailUsuarios = email1;
-         this.phoneUsuarios = phone1;
-         this.websiteTypeUsuarios = websiteType1;
-         this.viewportsQuantityUsuarios = viewportsQuantity1;
-         this.isEcommerceUsuarios = isEcommerce1;
-         this.functionalitiesUsuarios = functionalities1;
-         this.designLogoUsuarios = designLogo1;
-     }
- }
+class Usuarios {
+    constructor (completeName1, email1, phone1, websiteType1, viewportsQuantity1, isEcommerce1, functionalities1, designLogo1) {
+        this.nameUsuarios = completeName1;
+        this.emailUsuarios = email1;
+        this.phoneUsuarios = phone1;
+        this.websiteTypeUsuarios = websiteType1;
+        this.viewportsQuantityUsuarios = viewportsQuantity1;
+        this.isEcommerceUsuarios = isEcommerce1;
+        this.functionalitiesUsuarios = functionalities1;
+        this.designLogoUsuarios = designLogo1;
+    }
+}
 
 const usuario0 = new Usuarios ("Federico Moroni", "fede.moroni1993@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
 const usuario1 = new Usuarios ("Andres Garcia", "andres.garcia@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
@@ -96,3 +96,14 @@ const usuario2 = new Usuarios ("Nicolas Ardu", "ardunico@gmail.com", 3516331598,
 
  array.push(usuario2);
  console.log(array);
+
+array.sort((a,b) => {
+    if (a.nameUsuarios < b.nameUsuarios) {
+        return -1
+    }
+    if (a.nameUsuarios > b.nameUsuarios) {
+        return 1
+    }
+    return 0
+})
+console.log(array);
