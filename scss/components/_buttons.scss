@@ -38,3 +38,17 @@
 }
 
 // BACK-HOME: Para todos los botones submit del proyecto - END
+
+// CALCULATE PRICE button (Quoting System)
+.submit-quoting {
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  font-weight: 550;
+  margin-top: 1em;
+  color: white;
+  background-color: #4bb543;
+  border: 1px solid #4bb543;
+  border-radius: 3px;
+  text-transform: uppercase;
+}

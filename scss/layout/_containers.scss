@@ -45,6 +45,11 @@ html {
       display: flex;
       align-items: center;
     }
+    .container-quoting {
+      width: 100%;
+      height: 100vh;
+      margin-left: 0;
+    }
     .contact {
       @include container-variables(100%, 90vh);
     }
