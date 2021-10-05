@@ -1,15 +1,3 @@
-/*
-array.sort((a,b) => {
-    if (a.nameUsuarios < b.nameUsuarios) {
-        return -1
-    }
-    if (a.nameUsuarios > b.nameUsuarios) {
-        return 1
-    }
-    return 0
-})
-*/
-
 //Declaracion de array para guardar los objetos que voy a ir creando.
 
 let arrayUsuariosFinal = [];
