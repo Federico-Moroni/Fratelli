@@ -1,17 +1,4 @@
 /*
-const usuario0 = new Usuarios ("Federico Moroni", "fede.moroni1993@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
-const usuario1 = new Usuarios ("Andres Garcia", "andres.garcia@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
-const usuario2 = new Usuarios ("Nicolas Ardu", "ardunico@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
-
- let array = [usuario0];
- console.log(array);
-
- array.push(usuario1);
- console.log(array);
-
- array.push(usuario2);
- console.log(array);
-
 array.sort((a,b) => {
     if (a.nameUsuarios < b.nameUsuarios) {
         return -1
@@ -21,11 +8,11 @@ array.sort((a,b) => {
     }
     return 0
 })
-console.log(array);
 */
 
 //Declaracion de array para guardar los objetos que voy a ir creando.
 
+let arrayUsuariosFinal = [];
 let arrayUsuarios = [];
 let listaUsuarios = [];
 
@@ -116,6 +103,8 @@ function extraerInformacion () {
 
 const nuevoUsuario = new Usuarios (completeName, email, phone, websiteType, viewportsQuantity, isEcommerce, functionalities, designLogo);
 
+// Condicional que evita que se sobrescriba el array de usuarios.
+
 if (localStorage.getItem("listaUsuarios") == null) {
     arrayUsuarios.push(nuevoUsuario);
     localStorage.setItem("listaUsuarios", JSON.stringify(arrayUsuarios));
@@ -125,7 +114,19 @@ listaUsuarios.push(nuevoUsuario);
 localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));;
 }
 
-console.log(JSON.parse(localStorage.getItem("listaUsuarios")));
+arrayUsuariosFinal = JSON.parse(localStorage.getItem("listaUsuarios"));
+
+arrayUsuariosFinal.sort((a,b) => {
+    if (a.completeName < b.completeName) {
+        return -1
+    }
+    if (a.completeName > b.completeName) {
+        return 1
+    }
+    return 0
+})
+
+console.log(arrayUsuariosFinal);
 
 resetForm();
 }
@@ -144,4 +145,7 @@ class Usuarios {
         this.designLogo = designLogo;
     }
 }
+
+
+
 
