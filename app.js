@@ -1,6 +1,33 @@
+/*
+const usuario0 = new Usuarios ("Federico Moroni", "fede.moroni1993@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
+const usuario1 = new Usuarios ("Andres Garcia", "andres.garcia@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
+const usuario2 = new Usuarios ("Nicolas Ardu", "ardunico@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
+
+ let array = [usuario0];
+ console.log(array);
+
+ array.push(usuario1);
+ console.log(array);
+
+ array.push(usuario2);
+ console.log(array);
+
+array.sort((a,b) => {
+    if (a.nameUsuarios < b.nameUsuarios) {
+        return -1
+    }
+    if (a.nameUsuarios > b.nameUsuarios) {
+        return 1
+    }
+    return 0
+})
+console.log(array);
+*/
+
 //Declaracion de array para guardar los objetos que voy a ir creando.
 
-let array = []
+let arrayUsuarios = [];
+let listaUsuarios = [];
 
 //Funcion para resetear el formulario al darle click.
 
@@ -85,14 +112,25 @@ function extraerInformacion () {
         designLogo = designLogoNo.value;
     }
 
+// Indentacion de un nuevo objeto.
+
 const nuevoUsuario = new Usuarios (completeName, email, phone, websiteType, viewportsQuantity, isEcommerce, functionalities, designLogo);
 
-array.push(nuevoUsuario);
+if (localStorage.getItem("listaUsuarios") == null) {
+    arrayUsuarios.push(nuevoUsuario);
+    localStorage.setItem("listaUsuarios", JSON.stringify(arrayUsuarios));
+} else {
+listaUsuarios = JSON.parse(localStorage.getItem("listaUsuarios"));
+listaUsuarios.push(nuevoUsuario);
+localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));;
+}
 
-console.log(array);
+console.log(JSON.parse(localStorage.getItem("listaUsuarios")));
 
 resetForm();
 }
+
+// Generador de usuarios.
 
 class Usuarios {
     constructor (completeName, email, phone, websiteType, viewportsQuantity, isEcommerce, functionalities, designLogo) {
@@ -106,31 +144,4 @@ class Usuarios {
         this.designLogo = designLogo;
     }
 }
-
-
-/*
-const usuario0 = new Usuarios ("Federico Moroni", "fede.moroni1993@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
-const usuario1 = new Usuarios ("Andres Garcia", "andres.garcia@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
-const usuario2 = new Usuarios ("Nicolas Ardu", "ardunico@gmail.com", 3516331598, "Homepage", 7, "yes", "no", "no");
-
- let array = [usuario0];
- console.log(array);
-
- array.push(usuario1);
- console.log(array);
-
- array.push(usuario2);
- console.log(array);
-
-array.sort((a,b) => {
-    if (a.nameUsuarios < b.nameUsuarios) {
-        return -1
-    }
-    if (a.nameUsuarios > b.nameUsuarios) {
-        return 1
-    }
-    return 0
-})
-console.log(array);
-*/
 
