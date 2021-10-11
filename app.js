@@ -9,7 +9,6 @@ let listaUsuarios = [];
 function resetForm() {
     document.getElementById("quoting-form").reset();
 }
-
 document.getElementById("calculate").onclick = resetForm;
 
 //Para que al darle CALCULATE PRICE se ejecute la funcion extraerInformacion.
@@ -24,11 +23,9 @@ function extraerInformacion () {
     phone = document.getElementById("phone-quoting").value;
 
     websiteType = "";
-
     let websiteTypeLandingPage = document.getElementById("landing-page");
     let websiteTypeHomepage = document.getElementById("homepage");
     let websiteTypeNotSure = document.getElementById("not-sure");
-
     if (websiteTypeLandingPage.checked) {
         websiteType = websiteTypeLandingPage.value;
     } else if (websiteTypeHomepage.checked) {
@@ -38,12 +35,10 @@ function extraerInformacion () {
     }
 
     viewportsQuantity = "";
-
     let viewportsQuantity1to3 = document.getElementById("1-3");
     let viewportsQuantity4to6 = document.getElementById("4-6");
     let viewportsQuantity7to9 = document.getElementById("7-9");
     let viewportsQuantity10 = document.getElementById("+10");
-
     if (viewportsQuantity1to3.checked) {
         viewportsQuantity = viewportsQuantity1to3.value;
     } else if (viewportsQuantity4to6.checked) {
@@ -55,10 +50,8 @@ function extraerInformacion () {
     }
 
     isEcommerce = "";
-
     let isEcommerceYes = document.getElementById("yes-ecommerce");
     let isEcommerceNo = document.getElementById("no-ecommerce");
-
     if (isEcommerceYes.checked) {
         isEcommerce = isEcommerceYes.value;
     } else{
@@ -66,10 +59,8 @@ function extraerInformacion () {
     }
 
     functionalities = "";
-
     let functionalitiesYes = document.getElementById("yes-functionalities");
     let functionalitiesNo = document.getElementById("no-functionalities");
-
     if (functionalitiesYes.checked) {
         functionalities = functionalitiesYes.value;
     } else {
@@ -77,10 +68,8 @@ function extraerInformacion () {
     }
 
     designLogo = "";
-
     let designLogoYes = document.getElementById("yes-logo");
     let designLogoNo = document.getElementById("no-logo");
-
     if (designLogoYes.checked) {
         designLogo = designLogoYes.value;
     } else {
@@ -102,8 +91,9 @@ listaUsuarios.push(nuevoUsuario);
 localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));;
 }
 
-arrayUsuariosFinal = JSON.parse(localStorage.getItem("listaUsuarios"));
+// Le asigno a la variable arrayUsuariosFinal el array con todos los usuarios que tengo guardados en el localStorage.
 
+arrayUsuariosFinal = JSON.parse(localStorage.getItem("listaUsuarios"));
 arrayUsuariosFinal.sort((a,b) => {
     if (a.completeName < b.completeName) {
         return -1
@@ -111,11 +101,11 @@ arrayUsuariosFinal.sort((a,b) => {
     if (a.completeName > b.completeName) {
         return 1
     }
-    return 0
+        return 0
 })
-
-console.log(arrayUsuariosFinal);
-
+console.table(arrayUsuariosFinal);
+alert(priceCalculation());
+//Tengo que pushear el priceCalculation al arrayUsuariosFinal.
 resetForm();
 }
 
@@ -134,6 +124,59 @@ class Usuarios {
     }
 }
 
-
+function priceCalculation () {
+let websiteTypeValue, viewportsQuantityValue, isEcommerceValue, functionalitiesValues, designLogoValues, finalPriceValue;
+    switch (this.websiteType) {
+        case "not-sure":
+            websiteTypeValue = 40000;
+            break;
+        case "landing-page":
+            websiteTypeValue = 40000;
+            break;
+        case "homepage":
+            websiteTypeValue = 40000;
+            break;
+    }
+    switch (this.viewportsQuantity) {
+        case "1-3":
+            viewportsQuantityValue = 0;
+            break;
+        case "4-6":
+            viewportsQuantityValue = 15000;
+            break;
+        case "7-9":
+            viewportsQuantityValue = 35000;
+            break;
+        case "+10":
+            viewportsQuantityValue = 50000;
+            break;
+    }
+    switch (this.isEcommerce) {
+        case "yes-ecommerce":
+            isEcommerceValue = 10000;
+            break;
+        case "no-ecommerce":
+            isEcommerceValue = 0;
+            break;
+    }
+    switch (this.functionalities) {
+        case "yes-functionalities":
+            functionalitiesValues = 5000;
+            break;
+        case "no-functionalities":
+            functionalitiesValues = 0;
+            break;
+    }
+    switch (this.designLogo) {
+        case "yes-logo":
+            designLogoValues = 10000;
+            break;
+        case "no-logo":
+            designLogoValues = 0;
+            break;
+    }
+    finalPriceValue = websiteTypeValue + viewportsQuantityValue + isEcommerceValue + functionalitiesValues + designLogoValues;
+    return `El precio aproximado es $${finalPriceValue} ARS`;
+}
 
 
