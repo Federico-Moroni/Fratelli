@@ -144,6 +144,41 @@ const resetForm = () => {
 
 // document.getElementById("calculate").addEventListener('click', () => {verificacionLocalStorage(), resetForm()})
 
-// Aca esta el JQuery 
 $("#calculate").on("click", () => {verificacionLocalStorage(), resetForm()});
 
+// Dark Mode con JQuery
+
+const darkMode = () => {
+    $("body").css("background-color", "black");
+    $("h1").css("color", "white");
+    $("h2").css("color", "white");
+    $("label").css("color", "white");
+    $("input").css("color", "white");
+    $("theme").css("color", "white");
+    localStorage.setItem("theme", "dark");
+}
+
+const ligthMode = () => {
+    $("body").css("background-color", "white");
+    $("h1").css("color", "black");
+    $("h2").css("color", "black");
+    $("label").css("color", "black");
+    $("input").css("color", "black");
+    $("theme").css("color", "black");
+    localStorage.setItem("theme", "ligth");
+}
+
+$("#btn-theme").on("click", () => {
+    if (localStorage.getItem("theme") === "dark") {
+        ligthMode();
+    } else {
+        darkMode();
+    }
+})
+
+// Animaciones concatenadas con JQuery
+
+$("#btn-theme").click (() => {
+    $("#btn-theme").fadeOut();
+    $("#btn-theme").slideDown();
+});

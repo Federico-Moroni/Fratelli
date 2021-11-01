@@ -41,83 +41,86 @@
 
 <div id="quoting" class="container-quoting container-fluid">
     <div class="container-quoting-flex">
-        <div class="form-title">
-            <h1 class="quoting-title">Quoting System</h1>
+        <div class="form-title" id="theme">
+            <div class="header">
+                <h1 class="quoting-title">Quoting System</h1>
+                <button class="back-home-quoting" id="btn-theme">Dark Mode</button>
+            </div>
             <form id="quoting-form" class="quoting-form">
                 <div class="contact-information quoting-section">
-                    <label for="name-quoting">Name</label>
-                    <input type="text" id="name-quoting" name="name-quoting" placeholder="Your name">
-                    <label for="email-quoting">Email</label>
-                    <input type="email" id="email-quoting" name="email-quoting" placeholder="example@gmail.com">
-                    <label for="phone-quoting">Phone</label>
-                    <input type="text" id="phone-quoting" name="phone-quoting" placeholder="Your phone">
+                        <label for="name-quoting">Name</label>
+                        <input type="text" id="name-quoting" name="name-quoting" placeholder="Your name">
+                        <label for="email-quoting">Email</label>
+                        <input type="email" id="email-quoting" name="email-quoting" placeholder="example@gmail.com">
+                        <label for="phone-quoting">Phone</label>
+                        <input type="text" id="phone-quoting" name="phone-quoting" placeholder="Your phone">
                 </div>
                 <div class="website-type quoting-section">
-                    <h2 class="quoting-question">Which type of website would you like?</h2>
-                    <div class="input-label">
-                        <input type="radio" id="not-sure" name="website-type" value="not-sure">
-                        <label for="not-sure">Not sure</label>
-                    </div>
-                    <div class="input-label">
-                        <input type="radio" id="landing-page" name="website-type" value="landing-page">
-                        <label for="landing-page">Landing Page</label>
-                    </div>
-                    <div class="input-label">
-                        <input type="radio" id="homepage" name="website-type" value="homepage">
-                        <label for="homepage">Homepage</label>
-                    </div>
+                        <h2 class="quoting-question">Which type of website would you like?</h2>
+                        <div class="input-label">
+                            <input type="radio" id="not-sure" name="website-type" value="not-sure">
+                            <label for="not-sure">Not sure</label>
+                        </div>
+                        <div class="input-label">
+                            <input type="radio" id="landing-page" name="website-type" value="landing-page">
+                            <label for="landing-page">Landing Page</label>
+                        </div>
+                        <div class="input-label">
+                            <input type="radio" id="homepage" name="website-type" value="homepage">
+                            <label for="homepage">Homepage</label>
+                        </div>
                 </div>
                 <div class="viewports quoting-section">
-                    <h2 class="quoting-question">How many viewports does your website have?</h2>
-                    <div class="input-label">
-                        <input type="radio" id="1-3" name="viewports" value="1-3">
-                        <label for="1-3">1 - 3</label>
-                    </div>
-                    <div class="input-label">
-                        <input type="radio" id="4-6" name="viewports" value="4-6">
-                        <label for="4-6">4 - 6</label>
-                    </div>
-                    <div class="input-label">
-                        <input type="radio" id="7-9" name="viewports" value="7-9">
-                        <label for="6-9">7 - 9</label>
-                    </div>
-                    <div class="input-label">
-                        <input type="radio" id="+10" name="viewports" value="+10">
-                        <label for="+10">+ 10</label>
-                    </div>
+                        <h2 class="quoting-question">How many viewports does your website have?</h2>
+                        <div class="input-label">
+                            <input type="radio" id="1-3" name="viewports" value="1-3">
+                            <label for="1-3">1 - 3</label>
+                        </div>
+                        <div class="input-label">
+                            <input type="radio" id="4-6" name="viewports" value="4-6">
+                            <label for="4-6">4 - 6</label>
+                        </div>
+                        <div class="input-label">
+                            <input type="radio" id="7-9" name="viewports" value="7-9">
+                            <label for="6-9">7 - 9</label>
+                        </div>
+                        <div class="input-label">
+                            <input type="radio" id="+10" name="viewports" value="+10">
+                            <label for="+10">+ 10</label>
+                        </div>
                 </div>
                 <div class="ecommerce quoting-section">
-                    <h2 class="quoting-question">Is your website an e-commerce?</h2>
-                    <div class="input-label">
-                        <input type="radio" id="yes-ecommerce" name="ecommerce" value="yes-ecommerce">
-                        <label for="yes-ecommerce">Yes</label>
-                    </div>
-                    <div class="input-label">
-                        <input type="radio" id="no-ecommerce" name="ecommerce" value="no-ecommerce">
-                        <label for="no-ecommerce">No</label>
-                    </div>
+                        <h2 class="quoting-question">Is your website an e-commerce?</h2>
+                        <div class="input-label">
+                            <input type="radio" id="yes-ecommerce" name="ecommerce" value="yes-ecommerce">
+                            <label for="yes-ecommerce">Yes</label>
+                        </div>
+                        <div class="input-label">
+                            <input type="radio" id="no-ecommerce" name="ecommerce" value="no-ecommerce">
+                            <label for="no-ecommerce">No</label>
+                        </div>
                 </div>
                 <div class="functionalities quoting-section">
-                    <h2 class="quoting-question">Does your website have any functionalities like payment links, mathematical functions, etc?</h2>
-                    <div class="input-label">
-                        <input type="radio" id="yes-functionalities" name="functionalities" value="yes-functionalities">
-                        <label for="yes-functionalities">Yes</label>
-                    </div>
-                    <div class="input-label">
-                        <input type="radio" id="no-functionalities" name="functionalities" value="no-functionalities">
-                        <label for="no-functionalities">No</label>
-                    </div>
+                        <h2 class="quoting-question">Does your website have any functionalities like payment links, mathematical functions, etc?</h2>
+                        <div class="input-label">
+                            <input type="radio" id="yes-functionalities" name="functionalities" value="yes-functionalities">
+                            <label for="yes-functionalities">Yes</label>
+                        </div>
+                        <div class="input-label">
+                            <input type="radio" id="no-functionalities" name="functionalities" value="no-functionalities">
+                            <label for="no-functionalities">No</label>
+                        </div>
                 </div>
                 <div class="logo quoting-section">
-                    <h2 class="quoting-question">Would you like us to design your logo?</h2>
-                    <div class="input-label">
-                        <input type="radio" id="yes-logo" name="logo" value="yes-logo">
-                        <label for="yes-logo">Yes</label>
-                    </div>
-                    <div class="input-label">
-                        <input type="radio" id="no-logo" name="logo" value="no-logo">
-                        <label for="no-logo">No</label>
-                    </div>
+                        <h2 class="quoting-question">Would you like us to design your logo?</h2>
+                        <div class="input-label">
+                            <input type="radio" id="yes-logo" name="logo" value="yes-logo">
+                            <label for="yes-logo">Yes</label>
+                        </div>
+                        <div class="input-label">
+                            <input type="radio" id="no-logo" name="logo" value="no-logo">
+                            <label for="no-logo">No</label>
+                        </div>
                 </div>
                 <button type="button" class="submit-quoting submit-quoting-margin" id="calculate">Calculate Price</button>
             </form>
