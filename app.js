@@ -142,4 +142,8 @@ const resetForm = () => {
 
 // Evento para boton calculate price
 
-document.getElementById("calculate").addEventListener('click', () => {verificacionLocalStorage(), resetForm()})
+// document.getElementById("calculate").addEventListener('click', () => {verificacionLocalStorage(), resetForm()})
+
+// Aca esta el JQuery 
+$("#calculate").on("click", () => {verificacionLocalStorage(), resetForm()});
+

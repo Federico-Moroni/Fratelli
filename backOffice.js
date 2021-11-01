@@ -9,7 +9,7 @@ class User {
     }
 }
 
-const userLogin = new User ('fede',2712);
+const userLogin = new User ('fede', 2712);
 
 // Boton Login que ejecuta funciones asociadas
 
@@ -34,7 +34,7 @@ userPassword = Number(document.getElementById('password').value);
     }
 }
 
-// Extraccion de datos del LocalStorage para almacenar en array
+// Extraccion de datos del LocalStorage para almacenar en arrayDatosLocalMostrar
 
 const extraerDatosLocalMostrar = () => {
     if (JSON.parse(localStorage.getItem('listaUsuarios')) == null) {
