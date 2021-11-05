@@ -10,7 +10,8 @@ class Usuarios {
         isEcommerce,
         functionalities,
         designLogo,
-        price}) {
+        pricePesos,
+        priceDolar}) {
         this.completeName = completeName;
         this.email = email;
         this.phone = phone;
@@ -19,9 +20,12 @@ class Usuarios {
         this.isEcommerce = isEcommerce;
         this.functionalities = functionalities;
         this.designLogo = designLogo;
-        this.price = price;
+        this.pricePesos = pricePesos;
+        this.priceDolar = priceDolar;
     }
 }
+
+
 
 // Funcion extraerInformacion() que extrae los .value de los inputs y calcula el precio de la website en base a los checked.
 
@@ -97,14 +101,16 @@ const extraerInformacion = () => {
         designLogo = designLogoNo.value;
         designLogoPrice = 0;
     }
-    price = websiteTypePrice + viewportsQuantityPrice + isEcommercePrice + functionalitiesPrice + designLogoPrice;
-    return websiteType, viewportsQuantity, isEcommerce, functionalities, designLogo, price;
+
+    pricePesos = websiteTypePrice + viewportsQuantityPrice + isEcommercePrice + functionalitiesPrice + designLogoPrice;
+    return websiteType, viewportsQuantity, isEcommerce, functionalities, designLogo, pricePesos;
 }
 
 // Funcion nuevoUsuarioIndentacion() para indentar nuevo usuario
 
 const nuevoUsuarioIndentacion = () => {
-    extraerInformacion()
+    extraerInformacion();
+    priceDolar = pricePesos/precioDolar;
     const nuevoUsuario = new Usuarios ({
         completeName: document.getElementById("name-quoting").value,
         email: document.getElementById("email-quoting").value,
@@ -114,7 +120,8 @@ const nuevoUsuarioIndentacion = () => {
         isEcommerce,
         functionalities,
         designLogo,
-        price
+        pricePesos,
+        priceDolar
     });
     return nuevoUsuario;
 }
@@ -142,8 +149,6 @@ const resetForm = () => {
 
 // Evento para boton calculate price
 
-// document.getElementById("calculate").addEventListener('click', () => {verificacionLocalStorage(), resetForm()})
-
 $("#calculate").on("click", () => {verificacionLocalStorage(), resetForm()});
 
 // Dark Mode con JQuery
@@ -158,7 +163,7 @@ const darkMode = () => {
     localStorage.setItem("theme", "dark");
 }
 
-const ligthMode = () => {
+const lightMode = () => {
     $("body").css("background-color", "white");
     $("h1").css("color", "black");
     $("h2").css("color", "black");
@@ -170,7 +175,7 @@ const ligthMode = () => {
 
 $("#btn-theme").on("click", () => {
     if (localStorage.getItem("theme") === "dark") {
-        ligthMode();
+        lightMode();
     } else {
         darkMode();
     }
@@ -182,3 +187,19 @@ $("#btn-theme").click (() => {
     $("#btn-theme").fadeOut();
     $("#btn-theme").slideDown();
 });
+
+// API Dolar con AJAX: Aca voy a tomar el precio del dolar y cuando la persona de refresh, va a tomar el valor venta del dolar blue. A esto lo uso luego para mostrar no solo el precio en pesos, sino tambien en dolares.
+
+const url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+
+const dolar = () => {
+let array = [];
+$.get(url, (data, estado) => {
+    data.forEach(element => {
+        if (element.casa.nombre == 'Dolar Blue') {
+            array.push(element.casa);
+            console.log(array)
+                    }
+                })
+            }
+        )}
