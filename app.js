@@ -1,3 +1,9 @@
+const url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+let arrayDolar = [];
+let arrayDolarBlue;
+let nuevoArray = [];
+let valorCompraDolar;
+
 // Factory function
 
 class Usuarios {
@@ -25,11 +31,10 @@ class Usuarios {
     }
 }
 
-
-
 // Funcion extraerInformacion() que extrae los .value de los inputs y calcula el precio de la website en base a los checked.
 
 const extraerInformacion = () => {
+    valorCompraDolar = dolarBlue();
     websiteType = "";
     let websiteTypeLandingPage = document.getElementById("landing-page");
     let websiteTypeHomepage = document.getElementById("homepage");
@@ -103,14 +108,14 @@ const extraerInformacion = () => {
     }
 
     pricePesos = websiteTypePrice + viewportsQuantityPrice + isEcommercePrice + functionalitiesPrice + designLogoPrice;
-    return websiteType, viewportsQuantity, isEcommerce, functionalities, designLogo, pricePesos;
+    return websiteType, viewportsQuantity, isEcommerce, functionalities, designLogo, pricePesos, valorCompraDolar;
 }
 
 // Funcion nuevoUsuarioIndentacion() para indentar nuevo usuario
 
 const nuevoUsuarioIndentacion = () => {
     extraerInformacion();
-    priceDolar = pricePesos/precioDolar;
+    priceDolar = pricePesos/valorCompraDolar;
     const nuevoUsuario = new Usuarios ({
         completeName: document.getElementById("name-quoting").value,
         email: document.getElementById("email-quoting").value,
@@ -190,16 +195,32 @@ $("#btn-theme").click (() => {
 
 // API Dolar con AJAX: Aca voy a tomar el precio del dolar y cuando la persona de refresh, va a tomar el valor venta del dolar blue. A esto lo uso luego para mostrar no solo el precio en pesos, sino tambien en dolares.
 
-const url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
 
-const dolar = () => {
-let array = [];
-$.get(url, (data, estado) => {
-    data.forEach(element => {
-        if (element.casa.nombre == 'Dolar Blue') {
-            array.push(element.casa);
-            console.log(array)
-                    }
-                })
-            }
-        )}
+
+const dolarLocalStorage = () => {
+fetch(url)
+.then(response => response.json())
+.then(data => {
+    if (localStorage.getItem("arrayDolar") == null) {
+        let arrayDolar = [];
+        arrayDolar.push(data);
+        localStorage.setItem("arrayDolar", JSON.stringify(arrayDolar));
+    } else {
+        arrayDolar = JSON.parse(localStorage.getItem("arrayDolar"));
+        arrayDolar = [];
+        arrayDolar.push(data);
+        localStorage.setItem("arrayDolar", JSON.stringify(arrayDolar));;
+    }
+})
+}
+
+const dolarBlue = () => {
+    arrayDolar = JSON.parse(localStorage.getItem("arrayDolar"));
+    arrayDolarBlue = arrayDolar[0][1];
+    for (i in arrayDolarBlue);
+    nuevoArray.push(arrayDolarBlue[i].compra);
+    let valorCompraDolar = parseInt(nuevoArray[0]);
+    return valorCompraDolar;
+}
+
+dolarLocalStorage()

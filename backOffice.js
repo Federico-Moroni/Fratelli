@@ -63,6 +63,8 @@ const imprimirDatos = () => {
             <td>${element.isEcommerce}</td>
             <td>${element.functionalities}</td>
             <td>${element.designLogo}</td>
+            <td>${element.pricePesos}</td>
+            <td>${element.priceDolar}</td>
         </tr>
         `
     })
