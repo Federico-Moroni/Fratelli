@@ -4,6 +4,10 @@ let arrayDolarBlue;
 let nuevoArray = [];
 let valorCompraDolar;
 
+// Esto lo ejecutamos recien se abre la pagina para ocultar donde vamos a hacer el append child del precio final luego de clickear Calculate Price.
+
+$(".price-message-container").hide();
+
 // Factory function
 
 class Usuarios {
@@ -31,7 +35,39 @@ class Usuarios {
     }
 }
 
-// Funcion extraerInformacion() que extrae los .value de los inputs y calcula el precio de la website en base a los checked.
+// API Dolar con FETCH: Aca voy a tomar el precio del dolar blue. Primero consumo la API, la mando al local storage (por un tema que no pude resolver) y luego la vuelvo a llamar con getItem para al final del proceso tener el valor del dolar blue compra. La funcion que llama a la API va a ejecutarse automaticamente cuando se le de refresh a la pagina. 
+
+const dolarLocalStorage = () => {
+fetch(url)
+.then(response => response.json())
+.then(data => {
+    if (localStorage.getItem("arrayDolar") == null) {
+        let arrayDolar = [];
+        arrayDolar.push(data);
+        localStorage.setItem("arrayDolar", JSON.stringify(arrayDolar));
+    } else {
+        arrayDolar = JSON.parse(localStorage.getItem("arrayDolar"));
+        arrayDolar = [];
+        arrayDolar.push(data);
+        localStorage.setItem("arrayDolar", JSON.stringify(arrayDolar));;
+    }
+})
+}
+
+//Ejecuto esta funcion cuando carga la pagina porque si la ejecuto cuando el usuario clickea Calculate Price, el tiempo en que el codigo ejecuta todas las funciones es menor al tiempo en que se consume la API del dolar y guarda la informacion en localStorage para luego ser utilizada. 
+
+dolarLocalStorage()
+
+const dolarBlue = () => {
+    arrayDolar = JSON.parse(localStorage.getItem("arrayDolar"));
+    arrayDolarBlue = arrayDolar[0][1];
+    for (i in arrayDolarBlue);
+    nuevoArray.push(arrayDolarBlue[i].compra);
+    let valorCompraDolar = parseInt(nuevoArray[0]);
+    return valorCompraDolar;
+}
+
+// Funcion extraerInformacion() que extrae los .value de los inputs y calcula el precio de la website en base a los checked. Ademas asigno el return de la funcion dolarBlue() a la variable valorComprarDolar para luego dividir el pricePesos sobre valorCompraDolar y tener el precio en dolares. 
 
 const extraerInformacion = () => {
     valorCompraDolar = dolarBlue();
@@ -128,7 +164,6 @@ const nuevoUsuarioIndentacion = () => {
         pricePesos,
         priceDolar
     });
-    return nuevoUsuario;
 }
 
 // Chequeo si local storage para ver donde colocar el nuevo usuario indentado
@@ -154,7 +189,7 @@ const resetForm = () => {
 
 // Evento para boton calculate price
 
-$("#calculate").on("click", () => {verificacionLocalStorage(), resetForm()});
+$("#calculate").on("click", () => {verificacionLocalStorage(), hideQuoting()});
 
 // Dark Mode con JQuery
 
@@ -193,34 +228,6 @@ $("#btn-theme").click (() => {
     $("#btn-theme").slideDown();
 });
 
-// API Dolar con AJAX: Aca voy a tomar el precio del dolar y cuando la persona de refresh, va a tomar el valor venta del dolar blue. A esto lo uso luego para mostrar no solo el precio en pesos, sino tambien en dolares.
-
-
-
-const dolarLocalStorage = () => {
-fetch(url)
-.then(response => response.json())
-.then(data => {
-    if (localStorage.getItem("arrayDolar") == null) {
-        let arrayDolar = [];
-        arrayDolar.push(data);
-        localStorage.setItem("arrayDolar", JSON.stringify(arrayDolar));
-    } else {
-        arrayDolar = JSON.parse(localStorage.getItem("arrayDolar"));
-        arrayDolar = [];
-        arrayDolar.push(data);
-        localStorage.setItem("arrayDolar", JSON.stringify(arrayDolar));;
-    }
-})
+const hideQuoting = () => {
+    $("#theme").hide();
 }
-
-const dolarBlue = () => {
-    arrayDolar = JSON.parse(localStorage.getItem("arrayDolar"));
-    arrayDolarBlue = arrayDolar[0][1];
-    for (i in arrayDolarBlue);
-    nuevoArray.push(arrayDolarBlue[i].compra);
-    let valorCompraDolar = parseInt(nuevoArray[0]);
-    return valorCompraDolar;
-}
-
-dolarLocalStorage()

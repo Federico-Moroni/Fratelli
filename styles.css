@@ -1,0 +1,1653 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+html body {
+  background-color: #f8f8f8;
+}
+html body .hero-container,
+html body .about,
+html body .working-method,
+html body .projects,
+html body .contact,
+html body .project-full {
+  scroll-snap-align: start;
+}
+html body .hero-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/hero-backround1.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+html body .about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+html body .working-method {
+  width: 100%;
+  height: 105vh;
+}
+html body .projects {
+  width: 100%;
+  height: 105vh;
+}
+html body .project-full {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+html body .container-quoting {
+  width: 100%;
+  height: 100vh;
+  margin-left: 0;
+}
+html body .contact {
+  width: 100%;
+  height: 90vh;
+}
+html body .footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-container::after {
+  content: "";
+  opacity: 0.7;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  width: 100%;
+}
+.hero h1,
+.hero h3,
+.hero p {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 8.5em;
+  letter-spacing: 0.175em;
+  font-family: "inter";
+  width: fit-content;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.hero h1::after {
+  position: absolute;
+  content: "";
+  width: 97%;
+  height: 0.025em;
+  bottom: -0.25em;
+  left: 0;
+  background-color: #ead144;
+}
+.hero .left,
+.hero .right,
+.hero .center {
+  display: inline-block;
+}
+.hero .left {
+  animation: f 1.2s linear;
+}
+.hero .right {
+  animation: right 1.2s linear;
+}
+.hero .center {
+  animation: center 0.6s ease-in;
+  animation-delay: 0.6s;
+}
+
+.about .about-us {
+  height: 75vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.about .about-us .upper-title {
+  text-align: center;
+  position: relative;
+  display: inline;
+}
+.about .about-us .upper-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.09em;
+  background-color: #ead144;
+  bottom: -0.5em;
+  left: 0;
+}
+.about .about-us p {
+  text-align: center;
+  margin-top: 3vh;
+  font-family: "quicksand";
+  text-align: justify;
+  height: 20vh;
+}
+.about .about-us .about-image-federico {
+  background-image: url(../../images/federico-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.about .about-us .about-image-rocio {
+  background-image: url(../../images/rocio-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.working-method .working-method-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 94vh;
+}
+.working-method .working-method-container .working-method-federo {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 2.5%;
+}
+.working-method .working-method-container .working-method-federo .working-img-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.working-method .working-method-container .working-method-federo .working-img-h3 .working-federico-image {
+  background-image: url(../../images/federico-about.jpg);
+}
+.working-method .working-method-container .working-method-federo .working-img-h3 .working-rocio-image {
+  background-image: url(../../images/rocio-about.jpg);
+}
+.working-method .working-method-container .working-method-federo .working-img-h3 .working-federico-image,
+.working-method .working-method-container .working-method-federo .working-img-h3 .working-rocio-image {
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 50%;
+}
+.working-method .working-method-container .working-method-federo p {
+  text-align: justify;
+  font-family: "quicksand";
+}
+.working-method .working-method-container .working-method-federo .working-method-fede {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.working-method .working-method-container .working-method-federo .working-method-fede h3 {
+  text-align: center;
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+.working-method .working-method-container .working-method-federo .working-method-ro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.working-method .working-method-container .working-method-federo .working-method-ro h3 {
+  text-align: center;
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+.working-method .happy {
+  width: 100%;
+  height: 44vh;
+  font-family: "quicksand";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.working-method .happy .happy-carousel-container {
+  width: 55%;
+  margin: 0 auto;
+}
+.working-method .happy .happy-carousel-container .happy-carousel {
+  text-align: center;
+}
+.working-method .happy .happy-carousel-container .happy-carousel p {
+  font-size: 1em;
+}
+.working-method .happy .happy-title {
+  text-transform: uppercase;
+  position: relative;
+}
+.working-method .happy .happy-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.07em;
+  bottom: -0.8em;
+  left: 0;
+  background-color: #ead144;
+}
+.working-method .happy .happy-title .happy p {
+  font-family: "quicksand";
+}
+
+#projects h2 {
+  font-family: "quicksand";
+  height: 6vh;
+  padding: 1em 0 1em 0;
+}
+
+.projects-grid {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+.projects-grid .project-grid-format {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  height: 70vh;
+}
+.projects-grid .project-grid-format:hover .project-image-div {
+  transform: scale(1.02);
+  transition: 0.5s ease-in;
+}
+.projects-grid .project-grid-format .project-image-div {
+  height: 80%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.projects-grid .project-grid-format .project-1-image {
+  background-image: url(../../images/project-images/project-phone.jpg);
+}
+.projects-grid .project-grid-format .project-2-image {
+  background-image: url(../../images/project-images/project-bakery.jpg);
+}
+.projects-grid .project-grid-format .project-3-image {
+  background-image: url(../../images/project-images/project-photo.jpeg);
+}
+.projects-grid .project-grid-format h3 {
+  font-family: "quicksand";
+  text-transform: uppercase;
+}
+.projects-grid .project-grid-format p {
+  text-align: justify;
+  font-family: "quicksand";
+}
+.projects-grid .project-grid-format .see-more {
+  color: blue;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.contact .contact-container {
+  display: flex;
+  align-items: flex-start;
+  height: 85vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map-container {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.map-container h3 {
+  display: flex;
+  justify-content: start;
+  text-transform: uppercase;
+  font-family: "Quicksand";
+}
+
+.contact-box-container {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-transform: uppercase;
+}
+.contact-box-container .contact-us-box {
+  width: 100%;
+}
+.contact-box-container .contact-us-box .contact-box {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-box-container .contact-us-box .contact-box .message {
+  display: flex;
+  flex-direction: column;
+  resize: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+.header-logo {
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin-left: 2%;
+}
+
+.header-ul {
+  display: flex;
+  list-style: none;
+  margin-right: 3%;
+}
+
+header nav ul li {
+  padding: 0.5em;
+  margin-top: 0.9em;
+}
+
+.header-ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 0.3em;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-family: "quicksand";
+  margin: 0 0.1em;
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms;
+}
+
+.header-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav label {
+  z-index: 3;
+  display: none;
+}
+nav label:hover {
+  cursor: pointer;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.header-projects {
+  font-family: "quicksand";
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+}
+.header-projects nav {
+  width: 100%;
+  justify-content: space-between;
+}
+.header-projects .header-ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 0.3em;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-family: "quicksand";
+  margin: 0 0.1em;
+}
+.header-projects .header-ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms;
+}
+.header-projects .header-ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.footer {
+  background-image: linear-gradient(to top, #525252, black);
+}
+.footer .footer-logo {
+  position: relative;
+  z-index: 2;
+  margin-left: 2%;
+}
+.footer ul {
+  display: flex;
+}
+.footer ul img {
+  margin: 1em 2em 0 0;
+}
+.footer ul a :hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+.footer .mid-footer {
+  color: white;
+  font-family: "comfortaa";
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.upper-title {
+  /* For every title in the portfolio */
+  text-transform: uppercase;
+  font-family: "quicksand";
+  text-align: center;
+}
+
+.back-home {
+  text-decoration: none;
+  font-family: "quicksand";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 550;
+  border: 1px solid black;
+  color: black;
+  position: absolute;
+  right: 0;
+  margin-right: 1em;
+  padding: 0.5em;
+  margin-top: 1%;
+  z-index: 3;
+}
+.back-home:hover {
+  background-color: #474149;
+  color: white;
+  transition: 0.5s;
+}
+
+.back-home-quoting {
+  text-decoration: none;
+  font-family: "quicksand";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 550;
+  border: 1px solid black;
+  color: black;
+  position: absolute;
+  left: 44%;
+  margin-left: 1em;
+  padding: 0.5em;
+  margin-top: 1%;
+  z-index: 3;
+}
+.back-home-quoting:hover {
+  background-color: #474149;
+  color: white;
+  transition: 0.5s;
+}
+
+.darkmode {
+  text-decoration: none;
+  font-family: "quicksand";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 550;
+  border: 1px solid black;
+  color: black;
+  position: absolute;
+  right: 0;
+  margin-right: 1em;
+  padding: 0.5em;
+  margin-top: 1%;
+  z-index: 3;
+}
+.darkmode:hover {
+  background-color: #474149;
+  color: white;
+  transition: 0.5s;
+}
+
+.submit {
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+}
+.submit:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.submit-quoting {
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  font-weight: 550;
+  margin-top: 1em;
+  color: white;
+  background-color: #4bb543;
+  border: 1px solid #4bb543;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+@keyframes center {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(500px);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  75% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes f {
+  0% {
+    transform: translateX(-500px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* HERO RESPONSIVE START */
+@media all and (min-width: 1200px) {
+  .hero h1 {
+    font-size: 8.5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 992px) {
+  .hero h1 {
+    font-size: 7em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 768px) {
+  .hero h1 {
+    font-size: 5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 576px) {
+  .hero h1 {
+    font-size: 5em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 515px) {
+  .hero h1 {
+    font-size: 4em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+@media all and (max-width: 400px) {
+  .hero h1 {
+    font-size: 3em;
+    letter-spacing: 0.175em;
+    font-family: "inter";
+    width: fit-content;
+  }
+}
+/* HERO RESPONSIVE END */
+/* HEADER RESPONSIVE START - Aca esta el responsive del menu hamburguesa */
+@media all and (max-width: 885px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-ul {
+    flex-direction: column;
+    height: 8vh;
+    margin-left: -70%;
+  }
+
+  nav label {
+    display: block;
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+
+  #btn-menu:checked ~ .header-ul {
+    margin-left: 1%;
+  }
+}
+@media all and (max-width: 500px) {
+  header nav ul li {
+    padding: 0.5em;
+    margin-top: 0.1em;
+  }
+}
+/* HEADER RESPONSIVE END */
+@media all and (max-width: 1000px) {
+  .project-aside {
+    font-size: 0.8em;
+  }
+}
+/* SECTIONS RESPONSIVE START - Aca esta el responsive para toda la pagina */
+@media all and (min-width: 992px) {
+  .about .about-image-federico,
+.about .about-image-rocio {
+    height: 30vh;
+    margin-bottom: 1em;
+  }
+  .about .our-team {
+    padding: 1em;
+    font-size: 2.5em;
+  }
+  .about p {
+    font-size: 1em;
+  }
+
+  .working-method .working-title {
+    padding: 3%;
+    font-size: 2.5em;
+  }
+  .working-method .working-image {
+    width: 50%;
+    height: 20vh;
+    margin-bottom: 1em;
+  }
+  .working-method p {
+    font-size: 1em;
+  }
+  .working-method .happy .happy-title {
+    margin-bottom: 1.3em;
+  }
+
+  .projects .upper-title {
+    font-size: 2.5em;
+  }
+  .projects p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    height: 18vh;
+  }
+  .projects .project-name {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .projects .project-image-div {
+    margin-bottom: 2.2em;
+  }
+
+  .contact .email-us {
+    padding: 2% 0 0 0;
+    font-size: 2.5em;
+  }
+  .contact .contact-box {
+    margin-top: 4.2%;
+  }
+  .contact label,
+.contact input {
+    margin-bottom: 2.8%;
+    font-size: 1.1em;
+  }
+  .contact .message {
+    height: 15vh;
+    margin-bottom: 3%;
+  }
+  .contact .submit {
+    width: 120px;
+  }
+
+  .carousel-bakery .container-bakery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-bakery .container-bakery h1 {
+    font-size: 3em;
+  }
+  .carousel-bakery .container-bakery p {
+    font-size: 1.3em;
+  }
+
+  .carousel-photo .container-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-photo .container-photo h1 {
+    font-size: 3em;
+  }
+  .carousel-photo .container-photo p {
+    font-size: 1.3em;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .about .about-image-federico,
+.about .about-image-rocio {
+    height: 25vh;
+    margin-bottom: 1em;
+  }
+  .about .our-team {
+    padding: 1em;
+    font-size: 2.3em;
+  }
+  .about .about-name {
+    font-size: 1.5em;
+  }
+  .about p {
+    font-size: 1em;
+  }
+
+  .working-method .working-title {
+    padding: 1em;
+    font-size: 2.3em;
+  }
+  .working-method .working-image {
+    width: 70%;
+    height: 18vh;
+    margin-bottom: 1em;
+  }
+  .working-method p {
+    font-size: 1em;
+  }
+  .working-method .happy .happy-title {
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .projects .upper-title {
+    font-size: 2.3em;
+  }
+  .projects p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    height: 25vh;
+  }
+  .projects .project-name {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .projects .project-grid-format {
+    height: 55vh;
+  }
+  .projects .project-image-div {
+    margin-bottom: 1em;
+  }
+
+  .contact .email-us {
+    padding: 2%;
+    font-size: 2.5em;
+  }
+  .contact .contact-box {
+    margin-top: 4.2%;
+  }
+  .contact label,
+.contact input {
+    margin-bottom: 3%;
+    font-size: 1em;
+  }
+  .contact .message {
+    height: 15vh;
+    margin-bottom: 3%;
+  }
+  .contact .submit {
+    width: 120px;
+  }
+
+  .carousel-bakery .container-bakery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-bakery .container-bakery h1 {
+    font-size: 3em;
+  }
+  .carousel-bakery .container-bakery p {
+    font-size: 1.3em;
+  }
+
+  .carousel-photo .container-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-photo .container-photo h1 {
+    font-size: 3em;
+  }
+  .carousel-photo .container-photo p {
+    font-size: 1.3em;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .about .about-image-federico,
+.about .about-image-rocio {
+    height: 20vh;
+    margin-bottom: 1em;
+  }
+  .about .our-team {
+    padding: 1em;
+    font-size: 2em;
+  }
+  .about .about-name {
+    font-size: 1.3em;
+  }
+  .about .about-rocio,
+.about .about-federico {
+    height: 45vh;
+  }
+
+  .working-method .working-title {
+    padding: 1em;
+    font-size: 2em;
+  }
+  .working-method .working-method-federo {
+    justify-content: center;
+  }
+  .working-method h3 {
+    font-size: 1.3em;
+  }
+  .working-method .working-method-fede {
+    margin-bottom: 1em;
+  }
+  .working-method .working-image {
+    width: 35%;
+    height: 15vh;
+    margin-bottom: 2em;
+  }
+  .working-method p {
+    font-size: 1em;
+  }
+
+  .projects .upper-title {
+    font-size: 2em;
+  }
+  .projects p {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .projects .project-name {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+  .projects .projects-grid {
+    flex-direction: column;
+  }
+  .projects .project-grid-format {
+    flex-direction: row;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .projects .projects-column-text {
+    margin-left: 1em;
+    height: 20vh;
+    width: 100%;
+    margin-right: 4%;
+  }
+  .projects .project-name {
+    text-align: start;
+  }
+  .projects .see-more {
+    font-size: 1em;
+  }
+
+  .contact .contact-container {
+    flex-direction: column;
+  }
+  .contact .map-container {
+    width: 100%;
+    height: 30vh;
+  }
+  .contact .contact-box-container {
+    width: 100%;
+    height: 50vh;
+  }
+  .contact .email-us {
+    padding: 2%;
+    font-size: 2em;
+  }
+  .contact h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    text-align: start;
+    width: 90%;
+  }
+  .contact .contact-box {
+    margin-top: 1%;
+    width: 100%;
+    align-items: center;
+    margin-left: 5%;
+  }
+  .contact label,
+.contact input {
+    margin-bottom: 2.5%;
+    font-size: 1em;
+    width: 100%;
+  }
+  .contact .message {
+    height: 12vh;
+    margin-bottom: 3%;
+    width: 100%;
+  }
+  .contact .submit {
+    width: 100%;
+  }
+
+  .footer .logos {
+    width: 30px;
+  }
+
+  .carousel-bakery .container-bakery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-bakery .container-bakery h1 {
+    font-size: 3em;
+  }
+  .carousel-bakery .container-bakery p {
+    font-size: 1.3em;
+  }
+
+  .carousel-photo .container-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-photo .container-photo h1 {
+    font-size: 2em;
+  }
+  .carousel-photo .container-photo p {
+    font-size: 1em;
+  }
+}
+@media all and (max-width: 576px) {
+  .about .about-image-federico,
+.about .about-image-rocio {
+    height: 20vh;
+    margin-bottom: 0.5em;
+  }
+  .about .our-team {
+    padding: 1.4em 0 0 0;
+    font-size: 2em;
+  }
+  .about .about-name {
+    font-size: 1.3em;
+  }
+  .about .about-rocio,
+.about .about-federico {
+    height: 39vh;
+  }
+  .about .span-about {
+    display: none;
+  }
+
+  .working-method .working-title {
+    padding: 10% 0 0 0;
+    font-size: 2em;
+  }
+  .working-method .working-method-federo {
+    justify-content: center;
+    margin-top: 1em;
+  }
+  .working-method h3 {
+    font-size: 1.3em;
+  }
+  .working-method .working-image {
+    width: 30%;
+    height: 18vh;
+    margin-bottom: 1em;
+  }
+  .working-method p {
+    font-size: 1em;
+  }
+  .working-method .happy {
+    display: none;
+  }
+
+  .projects .upper-title {
+    font-size: 2em;
+    padding: 1em 0 0 0;
+  }
+  .projects .projects-column-text {
+    width: 100%;
+  }
+  .projects p {
+    font-size: 1em;
+    margin-bottom: 0.8em;
+  }
+  .projects .span-projects {
+    display: none;
+  }
+  .projects .see {
+    display: block;
+  }
+  .projects .project-name {
+    font-size: 1.3em;
+    margin-bottom: 0.8em;
+    text-transform: uppercase;
+  }
+  .projects .projects-grid {
+    flex-direction: column;
+  }
+  .projects .project-grid-format {
+    flex-direction: row;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .projects .project-image-div {
+    margin-right: 2%;
+  }
+  .projects .project-name {
+    text-align: start;
+    font-size: 1.4em;
+  }
+  .projects .see-more {
+    font-size: 0.9em;
+  }
+
+  .contact .email-us {
+    padding: 5% 0 0 0;
+    font-size: 2em;
+    margin-bottom: 3%;
+  }
+  .contact .contact-container {
+    flex-direction: column;
+  }
+  .contact .map-container {
+    width: 100%;
+    height: 25vh;
+  }
+  .contact h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+    text-align: start;
+    width: 90%;
+  }
+  .contact .contact-box-container {
+    width: 100%;
+    height: 55vh;
+  }
+  .contact .contact-box {
+    margin-top: 4.2%;
+    width: 100%;
+    align-items: center;
+    margin-left: 5%;
+  }
+  .contact label,
+.contact input {
+    margin-bottom: 1.9%;
+    font-size: 1em;
+    width: 100%;
+  }
+  .contact .message {
+    height: 12vh;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .contact .submit {
+    width: 100%;
+  }
+
+  .footer .logos {
+    width: 26px;
+  }
+
+  .carousel-bakery .container-bakery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-bakery .container-bakery h1 {
+    font-size: 1.8em;
+  }
+  .carousel-bakery .container-bakery p {
+    font-size: 1em;
+  }
+
+  .carousel-photo .container-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    justify-content: flex-end;
+    height: 91vh;
+  }
+  .carousel-photo .container-photo h1 {
+    font-size: 1.8em;
+  }
+  .carousel-photo .container-photo p {
+    font-size: 1em;
+  }
+}
+/* SECTIONS RESPONSIVE END */
+/* PROJECT-FULL RESPONSIVE START FOR IPAD - En esta parte le di el responsive al texto que aparece dentro del IPAD de las fotos del carousel en la seccion TECH */
+@media all and (min-width: 1560px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 10%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 3em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 1460px) and (max-width: 1560px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 13%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 3em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 1300px) and (max-width: 1460px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 17%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 3em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 1100px) and (max-width: 1300px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 21%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 900px) and (max-width: 1100px) {
+  .carousel-inner-tech .container {
+    width: 25%;
+    left: 39%;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 801px) and (max-width: 899px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 39vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 701px) and (max-width: 800px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 37vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 651px) and (max-width: 700px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 36vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 650px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 34vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 551px) and (max-width: 600px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 34vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 550px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 31vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 400px) and (max-width: 500px) {
+  .carousel-inner-tech .container {
+    width: 220px;
+    left: 27vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2 {
+    display: none;
+  }
+}
+@media all and (min-width: 350px) and (max-width: 399px) {
+  .carousel-inner-tech .container {
+    width: 200px;
+    left: 27vw;
+    top: 27%;
+  }
+  .carousel-inner-tech h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  .carousel-inner-tech p {
+    font-size: 0.9em;
+  }
+  .carousel-inner-tech .span-tech2,
+.carousel-inner-tech .span-tech1 {
+    display: none;
+  }
+}
+/* PROJECT-FULL RESPONSIVE END FOR IPAD */
+.row {
+  --bs-gutter-x: 0;
+}
+.row .carousel {
+  height: 100vh;
+}
+.row .carousel-inner .carousel-tech1 {
+  background-image: url(/images/project-images/project-phone.jpg);
+}
+.row .carousel-inner .carousel-tech2 {
+  background-image: url(/images/project-images/project-phone1.jpeg);
+}
+.row .carousel-inner .carousel-tech3 {
+  background-image: url(/images/project-images/project-phone2.jpeg);
+}
+.row .carousel-inner .carousel-bakery1 {
+  background-image: url(/images/project-images/project-bakery.jpg);
+}
+.row .carousel-inner .carousel-bakery2 {
+  background-image: url(/images/project-images/project-bakery1.jpeg);
+}
+.row .carousel-inner .carousel-bakery3 {
+  background-image: url(/images/project-images/project-bakery2.jpeg);
+}
+.row .carousel-inner .carousel-photo1 {
+  background-image: url(/images/project-images/project-photo.jpeg);
+}
+.row .carousel-inner .carousel-photo2 {
+  background-image: url(/images/project-images/project-photo1.jpeg);
+}
+.row .carousel-inner .carousel-photo3 {
+  background-image: url(/images/project-images/project-photo2.jpeg);
+}
+.row .carousel-inner .carousel-bakery,
+.row .carousel-inner .carousel-tech,
+.row .carousel-inner .carousel-photo {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.row .carousel-inner .carousel-bakery::before,
+.row .carousel-inner .carousel-tech::before,
+.row .carousel-inner .carousel-photo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.row .carousel-inner .container {
+  text-transform: uppercase;
+  font-family: "quicksand";
+  position: absolute;
+}
+.row .carousel-inner .container h1 {
+  text-align: center;
+}
+.row .carousel-inner .container p {
+  text-align: justify;
+}
+
+.container-quoting,
+.container-fluid {
+  padding-right: var(--bs-gutter-x, 0);
+  padding-left: var(--bs-gutter-x, 0);
+}
+.container-quoting .right-quoting,
+.container-fluid .right-quoting {
+  background-image: url(/images/backround-quoting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container-quoting .container-quoting-flex,
+.container-fluid .container-quoting-flex {
+  display: flex;
+}
+.container-quoting .container-quoting-flex .price-message-container,
+.container-fluid .container-quoting-flex .price-message-container {
+  width: 100%;
+  height: 100vh;
+}
+.container-quoting .container-quoting-flex .form-title,
+.container-fluid .container-quoting-flex .form-title {
+  width: 50%;
+}
+.container-quoting .container-quoting-flex .form-title .header,
+.container-fluid .container-quoting-flex .form-title .header {
+  display: flex;
+  justify-content: space-around;
+}
+.container-quoting .container-quoting-flex .right-quoting,
+.container-fluid .container-quoting-flex .right-quoting {
+  width: 50%;
+  height: 100vh;
+}
+.container-quoting .container-quoting-flex .quoting-title,
+.container-fluid .container-quoting-flex .quoting-title {
+  display: inline-block;
+  text-align: center;
+  font-family: "quicksand";
+  text-transform: uppercase;
+  width: 100%;
+}
+.container-quoting .container-quoting-flex .quoting-form,
+.container-fluid .container-quoting-flex .quoting-form {
+  margin-left: 0;
+  width: 100%;
+  height: 94vh;
+}
+.container-quoting .container-quoting-flex .quoting-form .contact-information,
+.container-fluid .container-quoting-flex .quoting-form .contact-information {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.container-quoting .container-quoting-flex .quoting-form .quoting-section,
+.container-fluid .container-quoting-flex .quoting-form .quoting-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+.container-quoting .container-quoting-flex .quoting-form .quoting-section .quoting-question,
+.container-fluid .container-quoting-flex .quoting-form .quoting-section .quoting-question {
+  font-size: 1.15em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.container-quoting .container-quoting-flex .quoting-form .quoting-section label,
+.container-quoting .container-quoting-flex .quoting-form .quoting-section input,
+.container-fluid .container-quoting-flex .quoting-form .quoting-section label,
+.container-fluid .container-quoting-flex .quoting-form .quoting-section input {
+  margin: 0.1em 0 0.1em 0;
+}
+.container-quoting .submit-quoting-margin,
+.container-fluid .submit-quoting-margin {
+  margin-left: 1em;
+}
+
+.formDiv {
+  width: fit-content;
+  background-color: #36373c;
+  color: white;
+  height: 200px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.formDiv #loginForm label {
+  width: 90px;
+}
+.formDiv #loginForm .user,
+.formDiv #loginForm .password {
+  margin-top: 1em;
+}
+.formDiv #loginForm .password {
+  margin-bottom: 2em;
+}
+.formDiv .btn-login {
+  display: flex;
+  justify-content: center;
+}
+.formDiv .btn-login #btn-login {
+  width: 200px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+}
+
+.tableLogin {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
