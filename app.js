@@ -3,10 +3,7 @@ let arrayDolar = [];
 let arrayDolarBlue;
 let nuevoArray = [];
 let valorCompraDolar;
-
-// Esto lo ejecutamos recien se abre la pagina para ocultar donde vamos a hacer el append child del precio final luego de clickear Calculate Price.
-
-$(".price-message-container").hide();
+let precioImprimir;
 
 // Factory function
 
@@ -151,7 +148,7 @@ const extraerInformacion = () => {
 
 const nuevoUsuarioIndentacion = () => {
     extraerInformacion();
-    priceDolar = pricePesos/valorCompraDolar;
+    priceDolar = Math.round((pricePesos/valorCompraDolar));
     const nuevoUsuario = new Usuarios ({
         completeName: document.getElementById("name-quoting").value,
         email: document.getElementById("email-quoting").value,
@@ -163,7 +160,9 @@ const nuevoUsuarioIndentacion = () => {
         designLogo,
         pricePesos,
         priceDolar
-    });
+    })
+    alert(`El precio de su pagina web es $${pricePesos} ARS y $${priceDolar} USD`)
+    return nuevoUsuario;
 }
 
 // Chequeo si local storage para ver donde colocar el nuevo usuario indentado
@@ -189,7 +188,7 @@ const resetForm = () => {
 
 // Evento para boton calculate price
 
-$("#calculate").on("click", () => {verificacionLocalStorage(), hideQuoting()});
+$("#calculate").on("click", () => {verificacionLocalStorage(), resetForm(), hideQuoting()});
 
 // Dark Mode con JQuery
 
@@ -227,7 +226,3 @@ $("#btn-theme").click (() => {
     $("#btn-theme").fadeOut();
     $("#btn-theme").slideDown();
 });
-
-const hideQuoting = () => {
-    $("#theme").hide();
-}
